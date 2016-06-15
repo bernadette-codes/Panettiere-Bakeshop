@@ -85,7 +85,7 @@ nav {
     background-color: #e5dcce;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    box-shadow: 3px 3px 3px #e5dcce, 3px -3px 3px #e5dcce;
+    box-shadow: 0 0 8px 2px #e5dcce;
     height: 100%;
 }
 
@@ -103,7 +103,7 @@ nav {
 /* All pages */
 .well {
     background: #e5dcce !important;
-    box-shadow: 3px 3px 3px #e5dcce, -3px -3px 3px #e5dcce !important;
+    box-shadow: 0 0 8px 2px #e5dcce !important;
     border-radius: 10px !important;
 }
 
