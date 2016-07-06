@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Bernadette Engleman">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -18,329 +18,418 @@
 <body>
 
 <!-- Brand Image-->
-<header><a id="top"></a>
-  <div class="text-center" id="photoholder">
-    <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" id="brand">
-  </div>
+<header class="text-center photoholder">
+  <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" class="brand">
 </header>
 
-
-<!-- Menu starts here -->
+<!-- Menu -->
 <nav class="navbar navbar-default">
   <div class="container">
 
-    <!-- Toggle -->
+    <!-- Toggle Button -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbtn">
-        <span id="toggle">Menu</span>
+        <span>Menu</span>
       </button>
     </div>
 
     <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarbtn">
-      <ul class="nav navbar-nav">
-        <li class="tilt"><a href="cakes.html"><img src="img/menucakes.jpg" class="menuleft"></a></li>
-        <li class="tilt"><a href="cookies.html"><img src="img/menucookies.jpg" class="menu"></a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="tilt"><a href="pies.html"><img src="img/menupies.jpg" class="menu"></a></li>
-        <li class="tilt"><a href="pastries.html"><img src="img/menupastries.jpg" class="menuright"></a></li>
-      </ul>
-    </div>
 
+      <!-- Left Side -->
+      <ul class="nav navbar-nav">
+        <li class="moveUp">
+          <a href="cakes.html">
+            <img src="img/menucakes.jpg" class="menuleft" alt="Cakes">
+          </a>
+        </li>
+        <li class="moveUp">
+          <a href="cookies.html">
+            <img src="img/menucookies.jpg" class="menu" alt="Cookies">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Right Side -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="moveUp">
+          <a href="pies.html">
+            <img src="img/menupies.jpg" class="menu" alt="Pies">
+          </a>
+        </li>
+        <li class="moveUp">
+          <a href="pastries.html">
+            <img src="img/menupastries.jpg" class="menuright" alt="Pastries">
+          </a>
+        </li>
+      </ul>
+
+    </div>
   </div>
 </nav>
 
+<!-- Content -->
+<section class="container-fluid">
+  <div class="row content">
 
-<!-- Content starts here -->
-<section>
-  <div class="container-fluid">
-    <div class="row content">
+    <!-- Side Bar-->
+    <div class="col-sm-2 sidenav">
+      <ul class="nav nav-pills">
+        <li><a href="#puff">Cream Puff</a></li>
+        <li><a href="#eclair">Éclair</a></li>
+        <li><a href="#cannoli">Cannoli</a></li>
+        <li><a href="#strudel">Strudel</a></li>
+        <li><a href="#muffin">Muffin</a></li>
+        <li><a href="#otherspastries">Others</a></li>
+      </ul>
+    </div>
 
-      <!-- Side Bar-->
-      <div class="col-sm-2 sidenav">
-        <ul class="nav nav-pills">
-          <li><a href="#puff">Cream Puff</a></li>
-          <li><a href="#eclair">Éclair</a></li>
-          <li><a href="#cannoli">Cannoli</a></li>
-          <li><a href="#strudel">Strudel</a></li>
-          <li><a href="#muffin">Muffin</a></li>
-          <li><a href="#otherspastries">Others</a></li>
-        </ul>
+    <!-- Right Side Content-->
+    <div class="col-sm-10 rightsidecontent">
+
+      <!-- Cream Puff -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="puff"></a>
+          <p><img src="img/menucreampuff.jpg" style="height:60px;" class="gallerytitle"></p>
+        </div>
+
+        <!-- Cream Puff Row 1 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuff-cocoa.jpg" alt="CoCoa Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cocoa</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffpeachesncream.jpg" alt="Peach Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Peach</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffmilkchoc.jpg" alt="Milk Chocolate Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Milk Chocolate</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffcoffeejelly.jpg" alt="Coffee Jelly Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Coffee Jelly</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cream Puff Row 2 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffstrawberry.jpg" alt="Strawberry Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Strawberry</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffmango.jpg" alt="Mango Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Mango</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffberry.jpg" alt="Berry Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Berry</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffgrapefruit.jpg" alt="Grapefruit Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Grapefruit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cream Puff Row 3 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffcookiecrunch.jpg" alt="Cookie Crunch Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cookie Crunch</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffapplecinnamon.jpg" alt="Apple Cinnamon Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apple Cinnamon</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffchocbanana.jpg" alt="Chocolate Banana Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Banana</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/creampuffdulcedeleche.jpg" alt="Dulce de Leche Cream Puff" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Dulce de Leche</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
 
-      <!-- Right Side Content-->
-      <div class="col-sm-10" id="rightsidecontent">
+      <!-- Éclair -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="eclair"></a>
+          <p><img src="img/menueclair.jpg" style="height:60px;" class="gallerytitle"></p>
+        </div>
 
-        <!-- Cream Puff -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="puff"></a>
-            <p><img src="img/menucreampuff.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
-
-          <!-- Cream Puff Row 1 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuff-cocoa.jpg" alt="CoCoa Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cocoa</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffpeachesncream.jpg" alt="Peach Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Peach</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffmilkchoc.jpg" alt="Milk Chocolate Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Milk Chocolate</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffcoffeejelly.jpg" alt="Coffee Jelly Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Coffee Jelly</p></div>
+        <!-- Éclair Row -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/eclair-chocolate.jpg" alt="Chocolate Éclair" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate</p>
             </div>
           </div>
-
-          <!-- Cream Puff Row 2 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffstrawberry.jpg" alt="Strawberry Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Strawberry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffmango.jpg" alt="Mango Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Mango</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffberry.jpg" alt="Berry Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Berry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffgrapefruit.jpg" alt="Grapefruit Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Grapefruit</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/eclair-raspberry.jpg" alt="Raspberry Éclair" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Raspberry</p>
             </div>
           </div>
-
-          <!-- Cream Puff Row 3 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffcookiecrunch.jpg" alt="Cookie Crunch Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cookie Crunch</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffapplecinnamon.jpg" alt="Apple Cinnamon Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apple Cinnamon</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffchocbanana.jpg" alt="Chocolate Banana Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Banana</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/creampuffdulcedeleche.jpg" alt="Dulce de Leche Cream Puff" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Dulce de Leche</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/eclair-choccaramel.jpg" alt="Chocolate Caramel Éclair" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Caramel</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/eclair-chocpraline.jpg" alt="Chocolate Praline Éclair" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Praline</p>
+            </div>
           </div>
         </div>
 
-        <!-- Éclair -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="eclair"></a>
-            <p><img src="img/menueclair.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
 
-          <!-- Éclair Row -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/eclair-chocolate.jpg" alt="Chocolate Éclair" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/eclair-raspberry.jpg" alt="Raspberry Éclair" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Raspberry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/eclair-choccaramel.jpg" alt="Chocolate Caramel Éclair" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Caramel</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/eclair-chocpraline.jpg" alt="Chocolate Praline Éclair" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Praline</p></div>
+      <!-- Cannoli -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="cannoli"></a>
+          <p><img src="img/menucannoli.jpg" style="height:60px;" class="gallerytitle"></p>
+        </div>
+
+        <!-- Cannoli Row -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/cannoliPlain.jpg" alt="Plain Ricotta Cheese Cannoli" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Ricotta Cheese</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/cannoliEspresso.jpg" alt="Chocolate Mousse Cannoli" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Mousse</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/cannoliChocolateDipped.jpg" alt="Chocolate-Dipped Cannoli" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate-Dipped</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/cannoliFlorentine.jpg" alt="Florentine Cannoli" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Florentine</p>
+            </div>
           </div>
         </div>
 
-        <!-- Cannoli -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="cannoli"></a>
-            <p><img src="img/menucannoli.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
 
-          <!-- Cannoli Row -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/cannoliPlain.jpg" alt="Plain Ricotta Cheese Cannoli" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Ricotta Cheese</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/cannoliEspresso.jpg" alt="Chocolate Mousse Cannoli" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Mousse</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/cannoliChocolateDipped.jpg" alt="Chocolate-Dipped Cannoli" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate-Dipped</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/cannoliFlorentine.jpg" alt="Florentine Cannoli" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Florentine</p></div>
+      <!-- Strudel -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="strudel"></a>
+          <p><img src="img/menustrudel.jpg" style="height:60px;" class="gallerytitle"></p>
+        </div>
+
+        <!-- Strudel Row -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/strudelcheese.jpg" alt="Cheese Strudel" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cheese</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/strudelapplewalnut.jpg" alt="Apple Strudel" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apple</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/strudelblueberrycheese.jpg" alt="Blueberry Strudel" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Blueberry</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/strudelapricot.jpg" alt="Apricot Strudel" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apricot</p>
+            </div>
           </div>
         </div>
 
-        <!-- Strudel -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="strudel"></a>
-            <p><img src="img/menustrudel.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
 
-          <!-- Strudel Row -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/strudelcheese.jpg" alt="Cheese Strudel" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cheese</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/strudelapplewalnut.jpg" alt="Apple Strudel" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apple</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/strudelblueberrycheese.jpg" alt="Blueberry Strudel" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Blueberry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/strudelapricot.jpg" alt="Apricot Strudel" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apricot</p></div>
+      <!-- Muffin -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="muffin"></a>
+          <p><img src="img/menumuffin.jpg" style="height:60px;" class="gallerytitle"></p>
+        </div>
+
+        <!-- Muffin Row 1 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffinapplecinnamon.jpg" alt="Apple Cinnamon Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apple Cinnamon</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffinbanana.jpg" alt="Banana Nut Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Banana Nut</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffinblueberry.jpg" alt="Blueberry Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Blueberry</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffinoatmeal.jpg" alt="Oatmeal Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Oatmeal Muffin</p>
+            </div>
           </div>
         </div>
 
-        <!-- Muffin -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="muffin"></a>
-            <p><img src="img/menumuffin.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
-
-          <!-- Muffin Row 1-->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffinapplecinnamon.jpg" alt="Apple Cinnamon Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apple Cinnamon</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffinbanana.jpg" alt="Banana Nut Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Banana Nut</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffinblueberry.jpg" alt="Blueberry Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Blueberry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffinoatmeal.jpg" alt="Oatmeal Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Oatmeal Muffin</p></div>
+        <!-- Muffin Row 2 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffincorn.jpg" alt="Corn Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Corn Muffin</p>
             </div>
           </div>
-
-          <!-- Muffin Row 2 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffincorn.jpg" alt="Corn Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Corn Muffin</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffincinnamoncrumb.jpg" alt="Cinnamon Crumb Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cinnamon Crumb</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffinapplecinnamon.jpg" alt="Apple Cinnamon Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apple Cinnamon</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/muffinlemonpoppy.jpg" alt="Lemon Poppy Seed Muffin" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Lemon Poppy Seed</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffincinnamoncrumb.jpg" alt="Cinnamon Crumb Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cinnamon Crumb</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffinapplecinnamon.jpg" alt="Apple Cinnamon Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apple Cinnamon</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/muffinlemonpoppy.jpg" alt="Lemon Poppy Seed Muffin" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Lemon Poppy Seed</p>
+            </div>
           </div>
         </div>
 
-        <!-- Others -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="otherspastries"></a>
-            <p><img src="img/menuothers.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
 
-          <!-- Others Row -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Napoleon.jpg" alt="Napoleon" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Napoleon</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/cronut.jpg" alt="Cronut" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cronut</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/lobstertail.jpg" alt="Lobster Tail" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Lobster Tail</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/cinnamon-rolls.jpg" alt="Cinnamon Roll" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cinnamon Roll</p></div>
+      <!-- Others -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="otherspastries"></a>
+          <p><img src="img/menuothers.jpg" style="height:60px;" class="gallerytitle"></p>
+        </div>
+
+        <!-- Others Row -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Napoleon.jpg" alt="Napoleon" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Napoleon</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/cronut.jpg" alt="Cronut" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cronut</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/lobstertail.jpg" alt="Lobster Tail" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Lobster Tail</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/cinnamon-rolls.jpg" alt="Cinnamon Roll" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cinnamon Roll</p>
+            </div>
           </div>
         </div>
 
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
 
     </div>
+
   </div>
 </section>
 
-
-<!-- Footer starts here -->
-<footer class="text-center" style="padding-top: 1em;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><span style="font-size: large;">Panettiere Bakeshop<span></span>
-		    <br><span style="font-size: medium;">45 Rockefeller Plaza, New York, NY 10111</span></p>
-        <p>Copyright © <span id="year"></span> Panettiere Bakeshop. All rights reserved.
-          <br><span class="small">Designed and created by: <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a></span></p>
-      </div>
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        <span class="storeName">Panettiere Bakeshop</span><br>
+        <span class="address">45 Rockefeller Plaza, New York, NY 10111</span>
+      </p>
+      <p>Copyright ©
+        <span id="year"></span> Panettiere Bakeshop. All rights reserved.<br>
+        <span class="small">Designed and created by:
+          <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
+        </span>
+      </p>
     </div>
   </div>
 </footer>
