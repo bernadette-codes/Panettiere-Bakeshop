@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Bernadette Engleman">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -18,198 +18,255 @@
 <body>
 
 <!-- Brand Image-->
-<header><a id="top"></a>
-  <div class="text-center" id="photoholder">
-    <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" id="brand">
-  </div>
+<header class="text-center photoholder">
+  <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" class="brand">
 </header>
 
-
-<!-- Menu starts here -->
+<!-- Menu -->
 <nav class="navbar navbar-default">
   <div class="container">
 
-    <!-- Toggle -->
+    <!-- Toggle Button -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbtn">
-        <span id="toggle">Menu</span>
+        <span>Menu</span>
       </button>
     </div>
 
     <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarbtn">
-      <ul class="nav navbar-nav">
-        <li class="tilt"><a href="cakes.html"><img src="img/menucakes.jpg" class="menuleft"></a></li>
-        <li class="tilt"><a href="cookies.html"><img src="img/menucookies.jpg" class="menu"></a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="tilt"><a href="pies.html"><img src="img/menupies.jpg" class="menu"></a></li>
-        <li class="tilt"><a href="pastries.html"><img src="img/menupastries.jpg" class="menuright"></a></li>
-      </ul>
-    </div>
 
+      <!-- Left Side -->
+      <ul class="nav navbar-nav">
+        <li class="moveUp">
+          <a href="cakes.html">
+            <img src="img/menucakes.jpg" class="menuleft" alt="Cakes">
+          </a>
+        </li>
+        <li class="moveUp">
+          <a href="cookies.html">
+            <img src="img/menucookies.jpg" class="menu" alt="Cookies">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Right Side -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="moveUp">
+          <a href="pies.html">
+            <img src="img/menupies.jpg" class="menu" alt="Pies">
+          </a>
+        </li>
+        <li class="moveUp">
+          <a href="pastries.html">
+            <img src="img/menupastries.jpg" class="menuright" alt="Pastries">
+          </a>
+        </li>
+      </ul>
+
+    </div>
   </div>
 </nav>
 
+<!-- Content -->
+<section class="container-fluid">
+  <div class="row content">
 
-<!-- Content starts here -->
-<section>
-  <div class="container-fluid">
-    <div class="row content">
+    <!-- Side Bar -->
+    <div class="col-sm-2 sidenav">
+      <ul class="nav nav-pills">
+        <li><a href="#chocpie">Chocolate Pies</a></li>
+        <li><a href="#fruit">Fruit Pies</a></li>
+      </ul>
+    </div>
 
-      <!-- Side Bar-->
-      <div class="col-sm-2 sidenav">
-        <ul class="nav nav-pills">
-          <li><a href="#chocpie">Chocolate Pies</a></li>
-          <li><a href="#fruit">Fruit Pies</a></li>
-        </ul>
+    <!-- Right Side Content -->
+    <div class="col-sm-10 rightsidecontent">
+
+      <!-- Chocolate Pies -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="chocpie"></a>
+          <p><img src="img/menuchocpies.jpg" height="60px" class="gallerytitle"></p>
+        </div>
+
+        <!-- Chocolate Pies 1 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChoTuxedoTorte.jpg" alt="Chocolate Tuxedo Torte Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Tuxedo Torte</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocMallowSwirl.jpg" alt="Chocolate Mallow Swirl Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Mallow Swirl</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocChipCherry.jpg" alt="Chocolate Chip Cherry Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Chip Cherry</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocCoconutCream.jpg" alt="Chocolate Coconut Cream Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Coconut Cream</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chocolate Pies 2 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/piePeanutButternChocMousse.jpg" alt="Peanut Butter and Chocolate Mousse Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Peanut Butter & Chocolate Mousse</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/piePeanutButternChocChipCookie.jpg" alt="Peanut Butter and Chocolate Chip Cookie Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Peanut Butter & Chocolate Chip Cookie</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieDoubleChocFruit.jpg" alt="Double Chocolate Fruit Tart" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Double Chocolate Fruit<br>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocolateMoussenPraline.jpg" alt="Chocolate Mousse and Praline Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Mousse & Praline<br>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chocolate Pies 3 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieBrownieCherry.jpg" alt="Brownie Cherry Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Brownie Cherry<br>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocolatePecan.jpg" alt="Chocolate Pecan Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Pecan<br>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocolateCream.jpg" alt=" Chocolate Cream Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Cream<br>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/pieChocMintMousse.jpg" alt="Chocolate Mint Mousse Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Mint Mousse<br>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
 
-      <!-- Right Side Content-->
-      <div class="col-sm-10" id="rightsidecontent">
+      <!-- Fruit Pies -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="fruit"></a>
+          <p><img src="img/menufruitpies.jpg" height="60px" class="gallerytitle"></p>
+        </div>
 
-        <!-- Chocolate Pies -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="chocpie"></a>
-            <p><img src="img/menuchocpies.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
-
-          <!-- Chocolate Pies 1 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChoTuxedoTorte.jpg" alt="Chocolate Tuxedo Torte Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Tuxedo Torte</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocMallowSwirl.jpg" alt="Chocolate Mallow Swirl Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Mallow Swirl</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocChipCherry.jpg" alt="Chocolate Chip Cherry Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Chip Cherry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocCoconutCream.jpg" alt="Chocolate Coconut Cream Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Coconut Cream</p></div>
+        <!-- Fruit Pies 1 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Pieapple.jpg" alt="Apple Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apple</p>
             </div>
           </div>
-
-          <!-- Chocolate Pies 2 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/piePeanutButternChocMousse.jpg" alt="Peanut Butter and Chocolate Mousse Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Peanut Butter & Chocolate Mousse</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/piePeanutButternChocChipCookie.jpg" alt="Peanut Butter and Chocolate Chip Cookie Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Peanut Butter & Chocolate Chip Cookie</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieDoubleChocFruit.jpg" alt="Double Chocolate Fruit Tart" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Double Chocolate Fruit<br>&nbsp;</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocolateMoussenPraline.jpg" alt="Chocolate Mousse and Praline Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Mousse & Praline<br>&nbsp;</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Piepecan.jpg" alt="Pecan Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Pecan</p>
             </div>
           </div>
-
-          <!-- Chocolate Pies 3 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieBrownieCherry.jpg" alt="Brownie Cherry Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Brownie Cherry<br>&nbsp;</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocolatePecan.jpg" alt="Chocolate Pecan Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Pecan<br>&nbsp;</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocolateCream.jpg" alt=" Chocolate Cream Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Cream<br>&nbsp;</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/pieChocMintMousse.jpg" alt="Chocolate Mint Mousse Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Mint Mousse<br>&nbsp;</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Pieapplewalnut.jpg" alt="Apple Walnut Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Apple Walnut</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Pieberry.jpg" alt="Three Berry Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Three Berry</p>
+            </div>
           </div>
         </div>
 
-        <!-- Fruit Pies -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="fruit"></a>
-            <p><img src="img/menufruitpies.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
-
-          <!-- Fruit Pies 1 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Pieapple.jpg" alt="Apple Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apple</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Piepecan.jpg" alt="Pecan Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Pecan</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Pieapplewalnut.jpg" alt="Apple Walnut Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Apple Walnut</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Pieberry.jpg" alt="Three Berry Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Three Berry</p></div>
+        <!-- Fruit Pies 2 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Piekeylimepie.jpg" alt="Key Line Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Key Lime</p>
             </div>
           </div>
-
-          <!-- Fruit Pies 2 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Piekeylimepie.jpg" alt="Key Line Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Key Lime</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Piechessarcrustapple.jpg" alt="Cheddar Crust Apple Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cheddar Crust Apple</p>
             </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Piechessarcrustapple.jpg" alt="Cheddar Crust Apple Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cheddar Crust Apple</p></div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/piebananacocounutcreampie.jpg" alt="Banana Coconut Cream Pie" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Banana Coconut Cream</p>
             </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/piebananacocounutcreampie.jpg" alt="Banana Coconut Cream Pie" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Banana Coconut Cream</p></div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/Piesampler.jpg" alt="Pie Sampler" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Pie Sampler</p>
             </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/Piesampler.jpg" alt="Pie Sampler" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Pie Sampler</p></div>
-            </div>
-
           </div>
 
-          <div class="backTop">
-            <a href="#top">Back to top</a>
-          </div>
         </div>
 
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
 
     </div>
+
   </div>
 </section>
 
-
-<!-- Footer starts here -->
-<footer class="text-center" style="padding-top: 1em;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><span style="font-size: large;">Panettiere Bakeshop<span></span>
-		    <br><span style="font-size: medium;">45 Rockefeller Plaza, New York, NY 10111</span></p>
-        <p>Copyright © <span id="year"></span> Panettiere Bakeshop. All rights reserved.
-          <br><span class="small">Designed and created by: <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a></span></p>
-      </div>
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        <span class="storeName">Panettiere Bakeshop</span><br>
+        <span class="address">45 Rockefeller Plaza, New York, NY 10111</span>
+      </p>
+      <p>Copyright ©
+        <span id="year"></span> Panettiere Bakeshop. All rights reserved.<br>
+        <span class="small">Designed and created by:
+          <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
+        </span>
+      </p>
     </div>
   </div>
 </footer>
