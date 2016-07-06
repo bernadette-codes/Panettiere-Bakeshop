@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Bernadette Engleman">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -18,283 +18,364 @@
 <body>
 
 <!-- Brand Image-->
-<header><a id="top"></a>
-  <div class="text-center" id="photoholder">
-    <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" id="brand">
-  </div>
+<header class="text-center photoholder">
+  <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" class="brand">
 </header>
 
-
-<!-- Menu starts here -->
+<!-- Menu -->
 <nav class="navbar navbar-default">
   <div class="container">
-    <!-- Toggle -->
+
+    <!-- Toggle Button -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbtn">
-        <span id="toggle">Menu</span>
+        <span>Menu</span>
       </button>
     </div>
 
     <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarbtn">
-      <ul class="nav navbar-nav">
-        <li class="tilt"><a href="cakes.html"><img src="img/menucakes.jpg" class="menuleft"></a></li>
-        <li class="tilt"><a href="cookies.html"><img src="img/menucookies.jpg" class="menu"></a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="tilt"><a href="pies.html"><img src="img/menupies.jpg" class="menu"></a></li>
-        <li class="tilt"><a href="pastries.html"><img src="img/menupastries.jpg" class="menuright"></a></li>
-      </ul>
-    </div>
 
+      <!-- Left Side -->
+      <ul class="nav navbar-nav">
+        <li class="moveUp">
+          <a href="cakes.html">
+            <img src="img/menucakes.jpg" class="menuleft" alt="Cakes">
+          </a>
+        </li>
+        <li class="moveUp">
+          <a href="cookies.html">
+            <img src="img/menucookies.jpg" class="menu" alt="Cookies">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Right Side -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="moveUp">
+          <a href="pies.html">
+            <img src="img/menupies.jpg" class="menu" alt="Pies">
+          </a>
+        </li>
+        <li class="moveUp">
+          <a href="pastries.html">
+            <img src="img/menupastries.jpg" class="menuright" alt="Pastries">
+          </a>
+        </li>
+      </ul>
+
+    </div>
   </div>
 </nav>
 
+<!-- Content -->
+<section class="container-fluid">
+  <div class="row content">
 
-<!-- Content starts here -->
-<section>
-  <div class="container-fluid">
-    <div class="row content">
+    <!-- Side Bar-->
+    <div class="col-sm-2 sidenav">
+      <ul class="nav nav-pills">
+        <li><a href="#cupcake">Cupcakes</a></li>
+        <li><a href="#bundt">Bundt Cakes</a></li>
+        <li><a href="#cheesecake">Cheesecakes</a></li>
+        <li><a href="#layerc">Layer Cakes</a></li>
+      </ul>
+    </div>
 
-      <!-- Side Bar-->
-      <div class="col-sm-2 sidenav">
-        <ul class="nav nav-pills">
-          <li><a href="#cupcake">Cupcakes</a></li>
-          <li><a href="#bundt">Bundt Cakes</a></li>
-          <li><a href="#cheesecake">Cheesecakes</a></li>
-          <li><a href="#layerc">Layer Cakes</a></li>
-        </ul>
+    <!-- Right Side Content-->
+    <div class="col-sm-10 rightsidecontent">
+
+      <!-- Cupcakes -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="cupcake"></a>
+          <p><img src="img/menucupcakes.jpg" height="60px" class="gallerytitle"></p>
+        </div>
+
+        <!-- Cupcakes Row 1-->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeChocolateChocIcing.jpg" alt="Chocolate Cupcake with Chocolate Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate w/ Chocolate Icing</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeButtercupChocFrosting.jpg" alt="Buttercup Cupcake with Chocolate Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Buttercup w/ Chocolate Icing</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeChocolateVanilla%20Frosting.jpg" alt="Chocolate Cupcake w/ Vanilla Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate w/ Vanilla Icing</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeButtercupVanilla%20Frosting.jpg" alt="Buttercup Cupcake w/ Vanilla Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Buttercup w/ Vanilla Icing</p>
+            </div>
+          </div>
+         </div>
+
+        <!-- Cupcakes Row 2-->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeDevil%20Dog.jpg" alt="Devil Dog Cupcake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Devil Dog</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeRedVelvet.jpg" alt="Red Velvet Cupcake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Red Velvet</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeLemon%20Cupcake.jpg" alt="Lemon Cupcake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Lemon</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CupcakeCinnamon.jpg" alt="Cinnamon Cupcake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Cinnamon</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
 
-      <!-- Right Side Content-->
-      <div class="col-sm-10" id="rightsidecontent">
+      <!-- Bundt Cakes -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="bundt"></a>
+          <p><img src="img/menubundt.jpg" height="60px" class="gallerytitle"></p>
+        </div>
 
-        <!-- Cupcakes -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="cupcake"></a>
-            <p><img src="img/menucupcakes.jpg" style="height:60px;" class="gallerytitle"></p>
+        <!-- Bundt Cakes Row  -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/BundtChocolate.jpg" alt="Chocolate Bundt Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate</p>
+            </div>
           </div>
-
-          <!-- Cupcakes Row 1-->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeChocolateChocIcing.jpg" alt="Chocolate Cupcake with Chocolate Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate w/ Chocolate Icing</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/BundtBlueberryCoffee.jpg" alt="Blueberry Coffee Bundt Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Blueberry</p>
             </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeButtercupChocFrosting.jpg" alt="Buttercup Cupcake with Chocolate Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Buttercup w/ Chocolate Icing</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeChocolateVanilla%20Frosting.jpg" alt="Chocolate Cupcake w/ Vanilla Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate w/ Vanilla Icing</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeButtercupVanilla%20Frosting.jpg" alt="Buttercup Cupcake w/ Vanilla Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Buttercup w/ Vanilla Icing</p></div>
-            </div>
-
           </div>
-
-          <!-- Cupcakes Row 2-->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeDevil%20Dog.jpg" alt="Devil Dog Cupcake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Devil Dog</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/BundtLemonVanilla.jpg" alt="Lemon Vanilla Bundt Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Lemon Vanilla</p>
             </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeRedVelvet.jpg" alt="Red Velvet Cupcake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Red Velvet</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeLemon%20Cupcake.jpg" alt="Lemon Cupcake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Lemon</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CupcakeCinnamon.jpg" alt="Cinnamon Cupcake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Cinnamon</p></div>
-            </div>
-
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/BundtAngelFoodCake.jpg" alt="Cinnamon Cupcake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Angel Food Cake</p>
+            </div>
           </div>
         </div>
 
-        <!-- Bundt Cakes -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="bundt"></a>
-            <p><img src="img/menubundt.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
 
-          <!-- Bundt Cakes Row  -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/BundtChocolate.jpg" alt="Chocolate Bundt Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/BundtBlueberryCoffee.jpg" alt="Blueberry Coffee Bundt Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Blueberry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/BundtLemonVanilla.jpg" alt="Lemon Vanilla Bundt Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Lemon Vanilla</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/BundtAngelFoodCake.jpg" alt="Cinnamon Cupcake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Angel Food Cake</p></div>
+      <!-- Cheesecakes -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="cheesecake"></a>
+          <p><img src="img/menucheesecake.jpg" height="60px" class="gallerytitle"></p>
+        </div>
+
+        <!-- Cheesecakes Row 1 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeChocolateMarble.jpg" alt="Chocolate Marble Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate Marble</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeRaspberrySwirled.jpg" alt="Raspberry Swirled Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Raspberry Swirled</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeREESESMarble.jpg" alt="Reese's Marble Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Reese's Marble</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeTripleLayer.jpg" alt="Triple Layer Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Triple Layer</p>
+            </div>
           </div>
         </div>
 
-        <!-- Cheesecakes -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="cheesecake"></a>
-            <p><img src="img/menucheesecake.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
-
-          <!-- Cheesecakes Row 1 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeChocolateMarble.jpg" alt="Chocolate Marble Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate Marble</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeRaspberrySwirled.jpg" alt="Raspberry Swirled Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Raspberry Swirled</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeREESESMarble.jpg" alt="Reese's Marble Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Reese's Marble</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeTripleLayer.jpg" alt="Triple Layer Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Triple Layer</p></div>
+        <!-- Cheesecakes Row 2 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeCaramel.jpg" alt="Caramel Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Caramel</p>
             </div>
           </div>
-
-          <!-- Cheesecakes Row 2 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeCaramel.jpg" alt="Caramel Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Caramel</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeRaspberry.jpg" alt="Raspberry Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Raspberry</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeCandyCaneSwirl.jpg" alt="Candy Cane Swirl Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Candy Cane Swirl</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/CheesecakeStrawberryChocolateChip.jpg" alt="Strawberry Chocolate Chip Cheesecake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Strawberry Chocolate Chip</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeRaspberry.jpg" alt="Raspberry Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Raspberry</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeCandyCaneSwirl.jpg" alt="Candy Cane Swirl Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Candy Cane Swirl</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/CheesecakeStrawberryChocolateChip.jpg" alt="Strawberry Chocolate Chip Cheesecake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Strawberry Chocolate Chip</p>
+            </div>
           </div>
         </div>
 
-        <!-- Layer Cake -->
-        <div class="container-fluid well text-center">
-          <div class="row text-center">
-            <a id="layerc"></a>
-            <p><img src="img/menulayercake.jpg" style="height:60px;" class="gallerytitle"></p>
-          </div>
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
 
-          <!-- Layer Cake Row 1 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerChocolateCakewChocIcing.jpg" alt="Chocolate Cake w/ Chocolate Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate w/ Choc Icing</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerClassicChocolatewVanillaIcing.jpg" alt="Classic Chocolate Cake w/ Vanilla Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Chocolate w/ Vanilla Icing</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerButtercupwChocIcing.jpg" alt="Buttercup Cake with Chocolate Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Buttercup w/ Choc Icing</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerButtercupwVanillaIcing.jpg" alt="Buttercup Cake with Vanilla Icing" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Buttercup w/ Vanilla Icing</p></div>
+      <!-- Layer Cake -->
+      <div class="container-fluid well text-center">
+        <div class="row text-center">
+          <a id="layerc"></a>
+          <p><img src="img/menulayercake.jpg" height="60px" class="gallerytitle"></p>
+        </div>
+
+        <!-- Layer Cake Row 1 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerChocolateCakewChocIcing.jpg" alt="Chocolate Cake w/ Chocolate Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate w/ Choc Icing</p>
             </div>
           </div>
-
-          <!-- Layer Cake Row 2 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerLemon.jpg" alt="Lemon Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Lemon</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerMochaccino.jpg" alt="Mochaccino Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Mochaccino</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerPeanutButternJelly.jpg" alt="Peanut Butter & Jelly Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Peanut Butter & Jelly</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerGermanChocolate.jpg" alt="German Chocolate Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">German Chocolate</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerClassicChocolatewVanillaIcing.jpg" alt="Classic Chocolate Cake w/ Vanilla Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Chocolate w/ Vanilla Icing</p>
             </div>
           </div>
-
-          <!-- Layer Cake Row 3 -->
-          <div class="row text-center">
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerRedVelvet.jpg" alt="Red Velvet Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Red Velvet</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerCarrot.jpg" alt="Carrot Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Carrot</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerCoconutCake.jpg" alt="Coconut Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Coconut</p></div>
-            </div>
-            <div class="col-md-3 text-center col-sm-3 col-xs-6">
-              <img src="img/LayerHummingbird.jpg" alt="Hummingbird Cake" class="img-responsive gallery">
-              <div class="caption"><p class="text-center">Hummingbird</p></div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerButtercupwChocIcing.jpg" alt="Buttercup Cake with Chocolate Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Buttercup w/ Choc Icing</p>
             </div>
           </div>
-
-          <div class="backTop">
-            <a href="#top">Back to top</a>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerButtercupwVanillaIcing.jpg" alt="Buttercup Cake with Vanilla Icing" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Buttercup w/ Vanilla Icing</p>
+            </div>
           </div>
         </div>
 
+        <!-- Layer Cake Row 2 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerLemon.jpg" alt="Lemon Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Lemon</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerMochaccino.jpg" alt="Mochaccino Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Mochaccino</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerPeanutButternJelly.jpg" alt="Peanut Butter & Jelly Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Peanut Butter & Jelly</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerGermanChocolate.jpg" alt="German Chocolate Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">German Chocolate</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Layer Cake Row 3 -->
+        <div class="row text-center">
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerRedVelvet.jpg" alt="Red Velvet Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Red Velvet</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerCarrot.jpg" alt="Carrot Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Carrot</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerCoconutCake.jpg" alt="Coconut Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Coconut</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center col-sm-3 col-xs-6">
+            <img src="img/LayerHummingbird.jpg" alt="Hummingbird Cake" class="img-responsive gallery">
+            <div class="caption">
+              <p class="text-center">Hummingbird</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="backTop">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
 
     </div>
+
   </div>
 </section>
 
-<!-- Footer starts here -->
-<footer class="text-center" style="padding-top: 1em;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><span style="font-size: large;">Panettiere Bakeshop<span></span>
-		    <br><span style="font-size: medium;">45 Rockefeller Plaza, New York, NY 10111</span></p>
-        <p>Copyright © <span id="year"></span> Panettiere Bakeshop. All rights reserved.
-          <br><span class="small">Designed and created by: <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a></span></p>
-      </div>
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        <span class="storeName">Panettiere Bakeshop</span><br>
+        <span class="address">45 Rockefeller Plaza, New York, NY 10111</span>
+      </p>
+      <p>Copyright ©
+        <span id="year"></span> Panettiere Bakeshop. All rights reserved.<br>
+        <span class="small">Designed and created by:
+          <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
+        </span>
+      </p>
     </div>
   </div>
 </footer>
