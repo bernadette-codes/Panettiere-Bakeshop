@@ -32,7 +32,8 @@ nav.navbar.navbar-default {
     margin-top: 20px;
 }
 
-.navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:focus {
+.navbar-header button.navbar-toggle:hover,
+.navbar-header button.navbar-toggle:focus {
     background-color: #e5dcce;
     color: #663300;
     border: 1px solid #663300;
@@ -43,7 +44,7 @@ header.photoholder {
     background: #fff5e5;
 }
 
-#brand {
+header img.brand {
     width:220px;
     height: 85px;
     position: relative;
@@ -52,7 +53,7 @@ header.photoholder {
 }
 
 /* Cookies & Pie Menu */
-.menu {
+li a img.menu {
     height:47px;
 }
 
@@ -94,20 +95,20 @@ li a img.menuright {
     height: 100%;
 }
 
-ul.nav-pills li a {
+.nav-pills li a {
     color: #4d3900;
     font-family: Georgia, Times, serif;
     font-weight: bold;
 }
 
-ul.nav-pills li a:hover,
-ul.nav-pills li a:focus  {
+.nav-pills li a:hover,
+.nav-pills li a:focus  {
     color: #ffffff;
     background-color: #663300;
 }
 
 /* All pages */
-section div.well {
+section .well {
     background: #e5dcce;
     box-shadow: 0 0 8px 2px #e5dcce;
     border-radius: 10px;
@@ -117,7 +118,7 @@ section div.well {
     margin-bottom: -20px;
 }
 
-div img.gallery {
+img.gallery {
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -140,8 +141,17 @@ div.backTop > a:hover {
 /* Footer */
 footer {
     background: #e5dcce;
+    padding-top: 1em;
     margin-top: 25px;
     box-shadow: 0 -4px 3px #e5dcce;
+}
+
+footer span.storeName {
+    font-size: large;
+}
+
+footer span.address {
+    font-size: medium;
 }
 
 footer p a {
@@ -162,12 +172,12 @@ footer p a {
 
 @media screen and (max-width: 1200px) {
     /* Brand Image */
-    #brand {
+    header img.brand {
         width: 209px;
         height: 81px;
     }
     /* Cookies & Pie Menu */
-    .menu {
+    li a img.menu {
         height:45px;
     }
     /* Cakes Menu */
@@ -184,12 +194,12 @@ footer p a {
 
 @media screen and (max-width: 991px) {
     /* Brand Image */
-    #brand {
+    header img.brand {
         width: 187px;
         height: 72px;
     }
     /* Cookies & Pie Menu */
-    .menu {
+    li a img.menu {
         height:40px;
     }
     /* Cakes Menu */
@@ -206,12 +216,12 @@ footer p a {
 
 @media screen and (max-width: 767px) {
     /* Brand Image */
-    #brand {
+    header img.brand {
         width: 165px;
         height: 64px;
     }
     /* Cookies & Pie Menu */
-    .menu {
+    li a img.menu {
         height:35px;
     }
     /* Cakes Menu */
@@ -225,7 +235,7 @@ footer p a {
         margin-right: 0;
     }
     /* Food Gallery */
-    #rightsidecontent {
+    .rightsidecontent {
         padding-top: 20px;
     }
 }
