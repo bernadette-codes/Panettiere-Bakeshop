@@ -14,7 +14,7 @@ body {
 }
 
 /* Header */
-nav.navbar.navbar-default {
+.navbar.navbar-default {
     background: #fff5e5;
     margin-top: -15px;
     border-top-style: hidden;
@@ -22,7 +22,7 @@ nav.navbar.navbar-default {
 }
 
 /* Toggle Button */
-.navbar-header button.navbar-toggle {
+button.navbar-toggle {
     color: #ffffff;
     font-family: Georgia, Times, serif;
     font-size: 16px;
@@ -32,19 +32,19 @@ nav.navbar.navbar-default {
     margin-top: 20px;
 }
 
-.navbar-header button.navbar-toggle:hover,
-.navbar-header button.navbar-toggle:focus {
+button.navbar-toggle:hover,
+button.navbar-toggle:focus {
     background-color: #e5dcce;
     color: #663300;
     border: 1px solid #663300;
 }
 
 /* Brand Image */
-header.photoholder {
+.photoholder {
     background: #fff5e5;
 }
 
-header img.brand {
+.brand {
     width:220px;
     height: 85px;
     position: relative;
@@ -53,18 +53,18 @@ header img.brand {
 }
 
 /* Cookies & Pie Menu */
-li a img.menu {
+.menu {
     height:47px;
 }
 
 /* Cakes Menu*/
-li a img.menuleft {
+.menuleft {
     height:47px;
     margin-left: 170px;
 }
 
 /* Pastries Menu */
-li a img.menuright {
+.menuright {
     height:47px;
     margin-right: 200px;
 }
@@ -79,11 +79,11 @@ li a img.menuright {
 }
 
 .moveUp:hover {
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -o-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 /* Side Bar */
@@ -101,10 +101,10 @@ li a img.menuright {
     font-weight: bold;
 }
 
-.nav-pills li a:hover,
-.nav-pills li a:focus  {
-    color: #ffffff;
-    background-color: #663300;
+.sidenav .nav-pills a:hover,
+.sidenav .nav-pills a:focus  {
+    background-color: #e5dcce;
+    text-decoration: underline;
 }
 
 /* All pages */
@@ -118,21 +118,21 @@ section .well {
     margin-bottom: -20px;
 }
 
-img.gallery {
+.gallery {
     border-radius: 10px;
     margin-top: 20px;
 }
 
-div.backTop {
+.backTop {
     margin-top: 30px;
 
 }
 
-div.backTop > a {
+.backTop > a {
     color: #4d3900;
 }
 
-div.backTop > a:hover {
+.backTop > a:hover {
     text-decoration: none;
     color: #4d3900;
     font-weight: bold;
@@ -146,11 +146,11 @@ footer {
     box-shadow: 0 -4px 3px #e5dcce;
 }
 
-footer span.storeName {
+.storeName {
     font-size: large;
 }
 
-footer span.address {
+.address {
     font-size: medium;
 }
 
@@ -172,21 +172,21 @@ footer p a {
 
 @media screen and (max-width: 1200px) {
     /* Brand Image */
-    header img.brand {
+    .brand {
         width: 209px;
         height: 81px;
     }
     /* Cookies & Pie Menu */
-    li a img.menu {
+    .menu {
         height:45px;
     }
     /* Cakes Menu */
-    li a img.menuleft {
+    .menuleft {
         height:45px;
         margin-left: 79px;
     }
     /* Pastries Menu */
-    li a img.menuright {
+    .menuright {
         height:45px;
         margin-right: 103px;
     }
@@ -194,21 +194,21 @@ footer p a {
 
 @media screen and (max-width: 991px) {
     /* Brand Image */
-    header img.brand {
+    .brand {
         width: 187px;
         height: 72px;
     }
     /* Cookies & Pie Menu */
-    li a img.menu {
+    .menu {
         height:40px;
     }
     /* Cakes Menu */
-    li a img.menuleft {
+    .menuleft {
         height:40px;
         margin-left: 5px;
     }
     /* Pastries Menu */
-    li a img.menuright {
+    .menuright {
         height:40px;
         margin-right: 30px;
     }
@@ -216,21 +216,21 @@ footer p a {
 
 @media screen and (max-width: 767px) {
     /* Brand Image */
-    header img.brand {
+    .brand {
         width: 165px;
         height: 64px;
     }
     /* Cookies & Pie Menu */
-    li a img.menu {
+    .menu {
         height:35px;
     }
     /* Cakes Menu */
-    li a img.menuleft {
+    .menuleft {
         height:35px;
         margin-left: 0;
     }
     /* Pastries Menu */
-    li a img.menuright {
+    .menuright {
         height:35px;
         margin-right: 0;
     }
