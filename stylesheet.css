@@ -45,27 +45,18 @@ button.navbar-toggle:focus {
 }
 
 .brand {
-    width:220px;
-    height: 85px;
     position: relative;
     padding-top: 15px;
     z-index: 100;
 }
 
-/* Cookies & Pie Menu */
-.menu {
-    height:47px;
-}
-
 /* Cakes Menu*/
 .menuleft {
-    height:47px;
     margin-left: 170px;
 }
 
 /* Pastries Menu */
 .menuright {
-    height:47px;
     margin-right: 200px;
 }
 
