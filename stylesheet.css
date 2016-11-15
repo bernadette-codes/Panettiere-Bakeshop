@@ -150,15 +150,68 @@ footer p a {
     text-decoration: underline;
 }
 
-/* Home page Slideshow */
-#myCarousel {
-    margin: auto;
-    width: 80%;
+/* Homepage */
+.homepage {
+    position: absolute;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    margin: auto;
+/* Slideshow Photos */
+#img1, #img2, #img3, #img4, #img5 {
+    width: 50%;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index:-1;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #e5dcce;
+    animation-name: photos;
+    -webkit-animation-name: photos;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+
+#img1 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+#img3 {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+#img4 {
+    animation-delay:4s;
+    -webkit-animation-delay: 4s;
+}
+
+#img2 {
+    animation-delay: 6s;
+    -webkit-animation-delay:6s;
+}
+
+#img5 {
+    animation-delay: 8s;
+    -webkit-animation-delay:8s;
+}
+
+@-webkit-keyframes photos {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes photos {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -229,68 +282,4 @@ footer p a {
     .rightsidecontent {
         padding-top: 20px;
     }
-}
-
-/* Homepage */
-.homepage {
-    position: absolute;
-}
-
-/* Slideshow Photos */
-#img1, #img2, #img3, #img4, #img5 {
-    width: 50%;
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index:-1;
-    border-radius: 5px;
-    box-shadow: 0 3px 3px #e5dcce;
-    animation-name: photos;
-    -webkit-animation-name: photos;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    opacity: 0;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-}
-
-#img1 {
-    animation-delay: 0s;
-    -webkit-animation-delay: 0s;
-}
-
-#img3 {
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-}
-
-#img4 {
-    animation-delay:4s;
-    -webkit-animation-delay: 4s;
-}
-
-#img2 {
-    animation-delay: 6s;
-    -webkit-animation-delay:6s;
-}
-
-#img5 {
-    animation-delay: 8s;
-    -webkit-animation-delay:8s;
-}
-
-@-webkit-keyframes photos {
-    0% {opacity: 0;}
-    30% {opacity: 1;}
-    70% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@keyframes photos {
-    0% {opacity: 0;}
-    30% {opacity: 1;}
-    70% {opacity: 1;}
-    100% {opacity: 0;}
 }
