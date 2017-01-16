@@ -39,6 +39,11 @@ button.navbar-toggle:focus {
     border: 1px solid #663300;
 }
 
+h1 {
+    position: absolute;
+    text-indent: -3000px;
+}
+
 /* Brand Image */
 .photoholder {
     background: #fff5e5;
@@ -99,17 +104,30 @@ button.navbar-toggle:focus {
 }
 
 /* All pages */
-section .well {
+section.well {
     background: #e5dcce;
     box-shadow: 0 0 8px 2px #e5dcce;
     border-radius: 10px;
 }
 
-.gallerytitle {
-    margin-bottom: -20px;
+main h2 a {
+    color: #4d3900;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
 }
 
-.gallery {
+main h2 a:hover,
+main h2 a:active,
+main h2 a:visited {
+    color: #4d3900;
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 8px;
+}
+
+img.gallery {
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -139,15 +157,24 @@ footer {
 
 .storeName {
     font-size: large;
+    margin-bottom: 3px;
 }
 
 address {
     font-size: medium;
+    margin-bottom: 5px;
 }
 
-footer p a {
+footer p a,
+footer p a:visited,
+footer p a:active {
     color: #303030;
+    text-decoration: none;
+}
+
+footer p a:hover {
     text-decoration: underline;
+    color: #303030;
 }
 
 /* Homepage */
