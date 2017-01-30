@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {
+*, body {
     padding: 0;
     margin: 0;
 }
@@ -9,34 +9,17 @@
 body {
     display: block;
     background: url(img/background.jpg) center center / cover no-repeat fixed;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header */
-.navbar.navbar-default {
-    background: #fff5e5;
-    margin-top: -15px;
-    border-top-style: hidden;
-    box-shadow: 0 3px 3px #e5dcce;
+header {
+    width: 100%;
+    z-index: 8990;
 }
 
-/* Toggle Button */
-button.navbar-toggle {
-    color: #ffffff;
-    font-family: Georgia, Times, serif;
-    font-size: 16px;
-    background-color: #663300;
-    z-index: 101;
-    padding: 3px 7px;
-    margin-top: 20px;
-}
-
-button.navbar-toggle:hover,
-button.navbar-toggle:focus {
-    background-color: #e5dcce;
-    color: #663300;
-    border: 1px solid #663300;
+.nav-wrap {
+    position: relative;
+    margin: 0 auto;
 }
 
 h1 {
@@ -44,86 +27,135 @@ h1 {
     text-indent: -3000px;
 }
 
-/* Brand Image */
-.photoholder {
+/* Menu */
+nav.navbar.navbar-default {
     background: #fff5e5;
+    border-top-style: hidden;
+    box-shadow: 0 3px 3px #e5dcce;
+    border-radius: 0;
 }
 
+nav.navbar ul.navbar-nav {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+ul.navbar-nav li {
+    width: 20%;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+ul.nav.navbar-nav a.menu {
+    background: #583225;
+    color: #fff;
+    font-family: Georgia, Times, serif;
+    font-size: 22px;
+    padding: 10px;
+    margin: 10px 20% 0;
+}
+
+ul.nav.navbar-nav a.menu:hover {
+    background: #fff5e5;
+    color: #583225;
+}
+
+ul.nav.navbar-nav a.menu:before {
+    border: 3px solid #583225;
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+}
+
+/* Brand Image */
 .brand {
     position: relative;
-    padding-top: 15px;
     z-index: 100;
+    margin-top: -25px;
+    margin-bottom: -5px;
 }
 
-/* Cakes Menu*/
-.menuleft {
-    margin-left: 170px;
+.smallBrand {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 8991;
 }
 
-/* Pastries Menu */
-.menuright {
-    margin-right: 200px;
-}
-
-/* Menu Hover */
-.moveUp {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.moveUp:hover {
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-
-/* Side Bar */
-.sidenav {
-    background-color: #e5dcce;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    box-shadow: 0 0 8px 2px #e5dcce;
-    height: 100%;
-}
-
-.nav-pills li a {
-    color: #4d3900;
+/* Toggle Button */
+button.navbar-toggle {
+    background-color: #663300;
+    color: #ffffff;
     font-family: Georgia, Times, serif;
-    font-weight: bold;
+    font-size: 16px;
+    padding: 3px 7px;
 }
 
-.sidenav .nav-pills a:hover,
-.sidenav .nav-pills a:focus  {
-    background-color: #e5dcce;
-    text-decoration: underline;
+button.navbar-toggle.collapsed:hover,
+button.navbar-toggle.collapsed:focus,
+button.navbar-toggle.collapsed:visited {
+    background-color: #fff5e5;
+    color: #663300;
+    border: 2px solid #663300;
+}
+
+/* Front Page Slideshow */
+#myCarousel {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
 }
 
 /* All pages */
+.mainContent nav#myScrollspy {
+    display: block;
+    float: left;
+    width: 18%;
+    padding: 0;
+    margin: 30px 0 0;
+}
+
+.mainContent main {
+    width: 78%;
+    margin: 30px 0 0 20%;
+    padding: 0;
+}
+
 section.well {
     background: #e5dcce;
     box-shadow: 0 0 8px 2px #e5dcce;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
-main h2 a {
+main h2 {
     color: #4d3900;
     font-family: Georgia, Times, serif;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-main h2 a:hover,
-main h2 a:active,
-main h2 a:visited {
+main h2:hover,
+main h2:active,
+main h2:visited {
     color: #4d3900;
     text-decoration: none;
 }
 
 h3 {
+    font-size: 18px;
     margin-top: 8px;
 }
 
@@ -132,23 +164,9 @@ img.gallery {
     margin-top: 20px;
 }
 
-.backTop {
-    margin-top: 30px;
-
-}
-
-.backTop > a {
-    color: #4d3900;
-}
-
-.backTop > a:hover {
-    text-decoration: none;
-    color: #4d3900;
-    font-weight: bold;
-}
-
 /* Footer */
 footer {
+    position: relative;
     background: #e5dcce;
     padding-top: 1em;
     margin-top: 25px;
@@ -177,136 +195,199 @@ footer p a:hover {
     color: #303030;
 }
 
-/* Homepage */
-.homepage {
-    position: absolute;
+/* Side Bar Menu */
+.affix {
+    top: 30px;
+    width: 18%;
+    z-index: 9000;
 }
 
-/* Slideshow Photos */
-#img1, #img2, #img3, #img4, #img5 {
-    width: 50%;
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index:-1;
+ul.nav-pills.nav-stacked {
+    list-style: none;
+    background: #fff5e5;
+    box-shadow: 0 0 8px 2px #e5dcce;
     border-radius: 5px;
-    box-shadow: 0 3px 3px #e5dcce;
-    animation-name: photos;
-    -webkit-animation-name: photos;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    opacity: 0;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
+    margin: 0;
+    padding: 0 15px 15px;
 }
 
-#img1 {
-    animation-delay: 0s;
-    -webkit-animation-delay: 0s;
+ul.nav-pills.nav-stacked a {
+    display: block;
+    position: relative;
+    background: #583225;
+    color: #fff;
+    font-family: Georgia, Times, serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
 }
 
-#img3 {
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
+ul.nav-pills.nav-stacked a:before {
+    border: 3px solid #583225;
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
 }
 
-#img4 {
-    animation-delay:4s;
-    -webkit-animation-delay: 4s;
+ul.nav-pills.nav-stacked li.active > a,
+.nav-pills.nav-stacked a:hover,
+.nav-pills.nav-stacked a:focus {
+    background: #fff5e5;
+    color: #583225;
 }
 
-#img2 {
-    animation-delay: 6s;
-    -webkit-animation-delay:6s;
-}
-
-#img5 {
-    animation-delay: 8s;
-    -webkit-animation-delay:8s;
-}
-
-@-webkit-keyframes photos {
-    0% {opacity: 0;}
-    30% {opacity: 1;}
-    70% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@keyframes photos {
-    0% {opacity: 0;}
-    30% {opacity: 1;}
-    70% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@media screen and (max-width: 1200px) {
+/***** Media Queries *****/
+@media screen and (max-width: 1299px) {
     /* Brand Image */
     .brand {
-        width: 209px;
-        height: 81px;
+        width: 100%;
     }
-    /* Cookies & Pie Menu */
-    .menu {
-        height:45px;
-    }
-    /* Cakes Menu */
-    .menuleft {
-        height:45px;
-        margin-left: 79px;
-    }
-    /* Pastries Menu */
-    .menuright {
-        height:45px;
-        margin-right: 103px;
+}
+
+@media screen and (max-width: 1199px) {
+    /* Front Page Slideshow */
+    #myCarousel {
+        width: 85%;
     }
 }
 
 @media screen and (max-width: 991px) {
     /* Brand Image */
     .brand {
-        width: 187px;
-        height: 72px;
+        height: 55px;
     }
-    /* Cookies & Pie Menu */
-    .menu {
-        height:40px;
+    /* Main Menu */
+    ul.nav.navbar-nav a.menu {
+        font-size: 18px;
+        margin: 3% 23% 0;
+        padding: 5px;
     }
-    /* Cakes Menu */
-    .menuleft {
-        height:40px;
-        margin-left: 5px;
+    /* Front Page Slideshow */
+    #myCarousel {
+        width: 90%;
     }
-    /* Pastries Menu */
-    .menuright {
-        height:40px;
-        margin-right: 30px;
+    /* Side Bar Menu */
+    .affix {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .mainContent nav#myScrollspy {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-pills.nav-stacked {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,.12);
+        border-radius: 0 !important;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-pills.nav-stacked li {
+        float: left;
+        margin: 5px 10px 10px;
+    }
+    ul.nav-pills.nav-stacked a {
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+    /* Product Gallery */
+    .mainContent main {
+        width: 96%;
+        margin: 100px 2% 3%;
+    }
+    img.gallery {
+        margin-top: 15px;
     }
 }
 
 @media screen and (max-width: 767px) {
     /* Brand Image */
-    .brand {
-        width: 165px;
-        height: 64px;
+    .smallBrand {
+        display: block;
+        height: 50px;
     }
-    /* Cookies & Pie Menu */
-    .menu {
-        height:35px;
+    /* Main Menu */
+    nav.navbar.navbar-default {
+        padding-bottom: 10px;
     }
-    /* Cakes Menu */
-    .menuleft {
-        height:35px;
-        margin-left: 0;
+    #navbarbtn.navbar-collapse {
+        border-top-style: hidden;
     }
-    /* Pastries Menu */
-    .menuright {
-        height:35px;
-        margin-right: 0;
+    nav.navbar ul.navbar-nav li {
+        float: left;
+        margin: 5px 10px;
     }
-    /* Food Gallery */
-    .rightsidecontent {
-        padding-top: 20px;
+    ul.nav.navbar-nav a.menu {
+        padding: 5px;
+        margin: 5px 5% 0;
+    }
+    /* Front Page Slideshow */
+    #myCarousel {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Main Menu */
+    nav.navbar ul.navbar-nav li {
+        margin: 5px 5px;
+    }
+    ul.nav.navbar-nav a.menu {
+        font-size: 17px;
+        padding: 5px;
+        margin: 5px 3% 0;
+    }
+    /* Side Bar Menu */
+    ul.nav-pills.nav-stacked a,
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Main Menu */
+    ul.nav.navbar-nav a.menu {
+        font-size: 15px;
+    }
+    /* Side Bar Menu */
+    ul.nav-pills.nav-stacked a,
+    h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Main Menu */
+    ul.nav.navbar-nav a.menu {
+        font-size: 13px;
+    }
+    /* Side Bar Menu */
+    ul.nav-pills.nav-stacked a {
+        font-size: 12px;
+    }
+    img.gallery {
+        margin-top: 10px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    footer address {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Main Menu */
+    ul.nav.navbar-nav a.menu {
+        font-size: 11px;
+    }
+    h3 {
+        font-size: 12px;
     }
 }
