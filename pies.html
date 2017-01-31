@@ -9,272 +9,202 @@
   <meta name="description" content="bakeshop website">
   <meta name="keywords" content="website project, bootstrap project">
   <meta name="author" content="Bernadette Engleman">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="shortcut icon" href="../../img/beIcon.png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
-<!-- Brand Image-->
-<header class="text-center photoholder">
-  <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" width="220" height="85" class="brand">
+<!-- Header -->
+<header>
+  <div class="nav-wrap">
+    <h1>Panettiere Bakeshop</h1>
+    <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" class="smallBrand">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Toggle Button -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbtn">
+            <span>Menu</span>
+          </button>
+        </div>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarbtn">
+          <ul class="nav navbar-nav">
+            <li><a href="cakes.html" class="menu">Cakes</a></li>
+            <li><a href="cookies.html" class="menu">Cookies</a></li>
+            <li class="logo hidden-xs">
+              <a href="index.html" class="smoothScroll">
+                <img src="img/brandimg.jpg" alt="Panettiere Bakeshop" width="220" height="80" class="brand">
+              </a>
+            </li>
+            <li><a href="pies.html" class="menu">Pies</a></li>
+            <li><a href="pastries.html" class="menu">Pastries</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<!-- Menu -->
-<nav class="navbar navbar-default">
-  <div class="container">
-
-    <!-- Toggle Button -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbtn">
-        <span>Menu</span>
-      </button>
-    </div>
-
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="navbarbtn">
-
-      <!-- Left Side -->
-      <ul class="nav navbar-nav">
-        <li class="moveUp">
-          <a href="cakes.html">
-            <img src="img/menucakes.jpg" alt="Cakes" height="47" class="menuleft">
-          </a>
-        </li>
-        <li class="moveUp">
-          <a href="cookies.html">
-            <img src="img/menucookies.jpg" alt="Cookies" height="47" class="menu">
-          </a>
-        </li>
-      </ul>
-
-      <!-- Right Side -->
-      <ul class="nav navbar-nav navbar-right">
-        <li class="moveUp">
-          <a href="pies.html">
-            <img src="img/menupies.jpg" alt="Pies" height="47" class="menu">
-          </a>
-        </li>
-        <li class="moveUp">
-          <a href="pastries.html">
-            <img src="img/menupastries.jpg" alt="Pastries" height="47" class="menuright">
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
 <!-- Content -->
-<section class="container-fluid">
-  <div class="row content">
-
-    <!-- Side Bar -->
-    <div class="col-sm-2 sidenav">
-      <ul class="nav nav-pills">
+<div class="container-fluid mainContent">
+    <!-- Menu -->
+    <nav id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
         <li><a href="#chocpie">Chocolate Pies</a></li>
         <li><a href="#fruit">Fruit Pies</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <!-- Right Side Content -->
-    <div class="col-sm-10 rightsidecontent">
+    <main>
 
       <!-- Chocolate Pies -->
-      <div class="container-fluid well text-center">
-        <div class="row text-center">
-          <a id="chocpie"></a>
-          <img src="img/menuchocpies.jpg" height="60" class="gallerytitle">
-        </div>
+      <section  id="chocpie" class="container-fluid well text-center">
+        <h2>Chocolate Pies</h2>
 
         <!-- Chocolate Pies 1 -->
-        <div class="row text-center">
-          <div class="text-center col-sm-3 col-xs-6">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieChoTuxedoTorte.jpg" alt="Chocolate Tuxedo Torte Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Tuxedo Torte</p>
-            </div>
+            <h3>Chocolate Tuxedo Torte</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieChocMallowSwirl.jpg" alt="Chocolate Mallow Swirl Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Mallow Swirl</p>
-            </div>
+            <h3>Chocolate Mallow Swirl</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieChocChipCherry.jpg" alt="Chocolate Chip Cherry Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Chip Cherry</p>
-            </div>
+            <h3>Chocolate Chip Cherry</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieChocCoconutCream.jpg" alt="Chocolate Coconut Cream Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Coconut Cream</p>
-            </div>
+            <h3>Chocolate Coconut Cream</h3>
           </div>
         </div>
 
         <!-- Chocolate Pies 2 -->
-        <div class="row text-center">
-          <div class="text-center col-sm-3 col-xs-6">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piePeanutButternChocMousse.jpg" alt="Peanut Butter and Chocolate Mousse Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Peanut Butter & Chocolate Mousse</p>
-            </div>
+            <h3>Peanut Butter & Chocolate Mousse</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piePeanutButternChocChipCookie.jpg" alt="Peanut Butter and Chocolate Chip Cookie Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Peanut Butter & Chocolate Chip Cookie</p>
-            </div>
+            <h3>Peanut Butter & Chocolate Chip Cookie</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieDoubleChocFruit.jpg" alt="Double Chocolate Fruit Tart" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Double Chocolate Fruit<br>&nbsp;</p>
-            </div>
+            <h3>Double Chocolate Fruit<br>&nbsp;</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieChocolateMoussenPraline.jpg" alt="Chocolate Mousse and Praline Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Mousse & Praline<br>&nbsp;</p>
-            </div>
+            <h3>Chocolate Mousse & Praline<br>&nbsp;</h3>
           </div>
         </div>
 
         <!-- Chocolate Pies 3 -->
-        <div class="row text-center">
-          <div class="text-center col-sm-3 col-xs-6">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieBrownieCherry.jpg" alt="Brownie Cherry Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Brownie Cherry<br>&nbsp;</p>
-            </div>
+            <h3>Brownie Cherry<br>&nbsp;</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
-            <img src="img/pieChocolatePecan.jpg" alt="Chocolate Pecan Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Pecan<br>&nbsp;</p>
-            </div>
-          </div>
-          <div class="text-center col-sm-3 col-xs-6">
-            <img src="img/pieChocolateCream.jpg" alt=" Chocolate Cream Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Cream<br>&nbsp;</p>
-            </div>
-          </div>
-          <div class="text-center col-sm-3 col-xs-6">
-            <img src="img/pieChocMintMousse.jpg" alt="Chocolate Mint Mousse Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Chocolate Mint Mousse<br>&nbsp;</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="backTop">
-          <a href="#top">Back to top</a>
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/pieChocolatePecan.jpg" alt="Chocolate Pecan Pie" class="img-responsive gallery">
+            <h3>Chocolate Pecan<br>&nbsp;</h3>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/pieChocolateCream.jpg" alt=" Chocolate Cream Pie" class="img-responsive gallery">
+            <h3>Chocolate Cream<br>&nbsp;</h3>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <img src="img/pieChocMintMousse.jpg" alt="Chocolate Mint Mousse Pie" class="img-responsive gallery">
+            <h3>Chocolate Mint Mousse<br>&nbsp;</h3>
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- Fruit Pies -->
-      <div class="container-fluid well text-center">
-        <div class="row text-center">
-          <a id="fruit"></a>
-          <img src="img/menufruitpies.jpg" height="60" class="gallerytitle">
-        </div>
+      <section id="fruit" class="container-fluid well text-center">
+        <h2>Fruit Pies</h2>
 
         <!-- Fruit Pies 1 -->
-        <div class="row text-center">
-          <div class="text-center col-sm-3 col-xs-6">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieapple.jpg" alt="Apple Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Apple</p>
-            </div>
+            <h3>Apple</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piepecan.jpg" alt="Pecan Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Pecan</p>
-            </div>
+            <h3>Pecan</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieapplewalnut.jpg" alt="Apple Walnut Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Apple Walnut</p>
-            </div>
+            <h3>Apple Walnut</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/pieberry.jpg" alt="Three Berry Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Three Berry</p>
-            </div>
+            <h3>Three Berry</h3>
           </div>
         </div>
 
         <!-- Fruit Pies 2 -->
-        <div class="row text-center">
-          <div class="text-center col-sm-3 col-xs-6">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piekeylimepie.jpg" alt="Key Line Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Key Lime</p>
-            </div>
+            <h3>Key Lime</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piechessarcrustapple.jpg" alt="Cheddar Crust Apple Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Cheddar Crust Apple</p>
-            </div>
+            <h3>Cheddar Crust Apple</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piebananacocounutcreampie.jpg" alt="Banana Coconut Cream Pie" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Banana Coconut Cream</p>
-            </div>
+            <h3>Banana Coconut Cream</h3>
           </div>
-          <div class="text-center col-sm-3 col-xs-6">
+
+          <div class="col-sm-3 col-xs-6">
             <img src="img/piesampler.jpg" alt="Pie Sampler" class="img-responsive gallery">
-            <div class="caption">
-              <p class="text-center">Pie Sampler</p>
-            </div>
+            <h3>Pie Sampler</h3>
           </div>
-
         </div>
+      </section>
 
-        <div class="backTop">
-          <a href="#top">Back to top</a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+    </main>
+</div>
 
 <!-- Footer -->
 <footer class="container-fluid text-center">
-  <div class="row">
-    <div class="col-xs-12">
-      <p class="storeName">Panettiere Bakeshop</p>
-      <address class="address">45 Rockefeller Plaza, New York, NY 10111</address>
+  <p class="storeName">Panettiere Bakeshop</p>
+  <address>45 Rockefeller Plaza, New York, NY 10111</address>
 
-      <p><small>Copyright ©
-        <span id="year"></span> Panettiere Bakeshop. All rights reserved.<br>
-        <span class="small">Designed and created by:
-          <a href="http://bernadetteengleman.com/" target="_blank">B. Engleman</a>
-        </span>
-      </small></p>
-    </div>
-  </div>
+  <p><small>Copyright © <span id="year"></span> Panettiere Bakeshop. All rights reserved.<br>
+    <span class="small">Designed and created by:
+      <a href="../../index.html" target="_blank">Bernadette Engleman</a><small>&#128279;</small>
+    </span>
+  </small></p>
 </footer>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script>
-  // Copyright Year
-  var d = new Date(), n = d.getFullYear();
-  document.getElementById("year").innerHTML = n;
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/panettiere.js"></script>
 
 </body>
 
