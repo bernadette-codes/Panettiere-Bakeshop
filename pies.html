@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="panettiere">
 
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="../../img/beIcon.png">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
@@ -52,142 +53,67 @@
 
 <!-- Content -->
 <div class="container-fluid mainContent">
-    <!-- Menu -->
-    <nav id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-        <li><a href="#chocpie">Chocolate Pies</a></li>
-        <li><a href="#fruit">Fruit Pies</a></li>
-      </ul>
-    </nav>
+  <!-- Menu -->
+  <nav id="myScrollspy">
+    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
+      <li><a href="#chocpie">Chocolate Pies</a></li>
+      <li><a href="#fruit">Fruit Pies</a></li>
+    </ul>
+  </nav>
 
-    <main>
+  <main ng-controller="productController as product">
 
-      <!-- Chocolate Pies -->
-      <section  id="chocpie" class="container-fluid well text-center">
-        <h2>Chocolate Pies</h2>
+    <!-- Chocolate Pies -->
+    <section  id="chocpie" class="container-fluid well text-center">
+      <h2>Chocolate Pies</h2>
 
-        <!-- Chocolate Pies 1 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChoTuxedoTorte.jpg" alt="Chocolate Tuxedo Torte Pie" class="img-responsive gallery">
-            <h3>Chocolate Tuxedo Torte</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocMallowSwirl.jpg" alt="Chocolate Mallow Swirl Pie" class="img-responsive gallery">
-            <h3>Chocolate Mallow Swirl</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocChipCherry.jpg" alt="Chocolate Chip Cherry Pie" class="img-responsive gallery">
-            <h3>Chocolate Chip Cherry</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocCoconutCream.jpg" alt="Chocolate Coconut Cream Pie" class="img-responsive gallery">
-            <h3>Chocolate Coconut Cream</h3>
-          </div>
+      <!-- Chocolate Pies 1 -->
+      <div class="row">
+        <div ng-repeat="product in chocPiesR1" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Chocolate Pies 2 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piePeanutButternChocMousse.jpg" alt="Peanut Butter and Chocolate Mousse Pie" class="img-responsive gallery">
-            <h3>Peanut Butter & Chocolate Mousse</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piePeanutButternChocChipCookie.jpg" alt="Peanut Butter and Chocolate Chip Cookie Pie" class="img-responsive gallery">
-            <h3>Peanut Butter & Chocolate Chip Cookie</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieDoubleChocFruit.jpg" alt="Double Chocolate Fruit Tart" class="img-responsive gallery">
-            <h3>Double Chocolate Fruit<br>&nbsp;</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocolateMoussenPraline.jpg" alt="Chocolate Mousse and Praline Pie" class="img-responsive gallery">
-            <h3>Chocolate Mousse & Praline<br>&nbsp;</h3>
-          </div>
+      <!-- Chocolate Pies 2 -->
+      <div class="row">
+        <div ng-repeat="product in chocPiesR2" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Chocolate Pies 3 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieBrownieCherry.jpg" alt="Brownie Cherry Pie" class="img-responsive gallery">
-            <h3>Brownie Cherry<br>&nbsp;</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocolatePecan.jpg" alt="Chocolate Pecan Pie" class="img-responsive gallery">
-            <h3>Chocolate Pecan<br>&nbsp;</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocolateCream.jpg" alt=" Chocolate Cream Pie" class="img-responsive gallery">
-            <h3>Chocolate Cream<br>&nbsp;</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieChocMintMousse.jpg" alt="Chocolate Mint Mousse Pie" class="img-responsive gallery">
-            <h3>Chocolate Mint Mousse<br>&nbsp;</h3>
-          </div>
+      <!-- Chocolate Pies 3 -->
+      <div class="row">
+        <div ng-repeat="product in chocPiesR3" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Fruit Pies -->
-      <section id="fruit" class="container-fluid well text-center">
-        <h2>Fruit Pies</h2>
+    <!-- Fruit Pies -->
+    <section id="fruit" class="container-fluid well text-center">
+      <h2>Fruit Pies</h2>
 
-        <!-- Fruit Pies 1 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieapple.jpg" alt="Apple Pie" class="img-responsive gallery">
-            <h3>Apple</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piepecan.jpg" alt="Pecan Pie" class="img-responsive gallery">
-            <h3>Pecan</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieapplewalnut.jpg" alt="Apple Walnut Pie" class="img-responsive gallery">
-            <h3>Apple Walnut</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/pieberry.jpg" alt="Three Berry Pie" class="img-responsive gallery">
-            <h3>Three Berry</h3>
-          </div>
+      <!-- Fruit Pies 1 -->
+      <div class="row">
+        <div ng-repeat="product in fruitPiesR1" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Fruit Pies 2 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piekeylimepie.jpg" alt="Key Line Pie" class="img-responsive gallery">
-            <h3>Key Lime</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piechessarcrustapple.jpg" alt="Cheddar Crust Apple Pie" class="img-responsive gallery">
-            <h3>Cheddar Crust Apple</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piebananacocounutcreampie.jpg" alt="Banana Coconut Cream Pie" class="img-responsive gallery">
-            <h3>Banana Coconut Cream</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/piesampler.jpg" alt="Pie Sampler" class="img-responsive gallery">
-            <h3>Pie Sampler</h3>
-          </div>
+      <!-- Fruit Pies 2 -->
+      <div class="row">
+        <div ng-repeat="product in fruitPiesR2" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 </div>
 
 <!-- Footer -->
@@ -205,6 +131,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="js/panettiere.js"></script>
+<!-- AngularJS App -->
+<script src="js/app.js"></script>
 
 </body>
 
