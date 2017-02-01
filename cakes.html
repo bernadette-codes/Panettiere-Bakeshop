@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="panettiere">
 
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="../../img/beIcon.png">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
@@ -52,223 +53,103 @@
 
 <!-- Content -->
 <div class="container-fluid mainContent">
-    <!-- Menu -->
-    <nav id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-        <li><a href="#cupcake">Cupcakes</a></li>
-        <li><a href="#layerc">Layer Cakes</a></li>
-        <li><a href="#cheesecake">Cheesecakes</a></li>
-        <li><a href="#bundt">Bundt Cakes</a></li>
-      </ul>
-    </nav>
+  <!-- Menu -->
+  <nav id="myScrollspy">
+    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
+      <li><a href="#cupcake">Cupcakes</a></li>
+      <li><a href="#layerc">Layer Cakes</a></li>
+      <li><a href="#cheesecake">Cheesecakes</a></li>
+      <li><a href="#bundt">Bundt Cakes</a></li>
+    </ul>
+  </nav>
 
-    <main>
+  <main ng-controller="productController as product">
 
-      <!-- Cupcakes -->
-      <section  id="cupcake" class="container-fluid well text-center">
-        <h2>Cupcakes</h2>
+    <!-- Cupcakes -->
+    <section  id="cupcake" class="container-fluid well text-center">
+      <h2>Cupcakes</h2>
 
-        <!-- Cupcakes Row 1-->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeChocolateChocIcing.jpg" alt="Chocolate Cupcake with Chocolate Icing" class="img-responsive gallery">
-            <h3>Chocolate w/ Chocolate Icing</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeButtercupChocFrosting.jpg" alt="Buttercup Cupcake with Chocolate Icing" class="img-responsive gallery">
-            <h3>Buttercup w/ Chocolate Icing</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeChocolateVanilla%20Frosting.jpg" alt="Chocolate Cupcake w/ Vanilla Icing" class="img-responsive gallery">
-            <h3>Chocolate w/ Vanilla Icing</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeButtercupVanilla%20Frosting.jpg" alt="Buttercup Cupcake w/ Vanilla Icing" class="img-responsive gallery">
-            <h3>Buttercup w/ Vanilla Icing</h3>
-          </div>
+      <!-- Cupcakes Row 1-->
+      <div class="row">
+        <div ng-repeat="product in cupcakesR1" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Cupcakes Row 2-->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeDevil%20Dog.jpg" alt="Devil Dog Cupcake" class="img-responsive gallery">
-            <h3>Devil Dog</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeRedVelvet.jpg" alt="Red Velvet Cupcake" class="img-responsive gallery">
-            <h3>Red Velvet</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeLemon%20Cupcake.jpg" alt="Lemon Cupcake" class="img-responsive gallery">
-            <h3>Lemon</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cupcakeCinnamon.jpg" alt="Cinnamon Cupcake" class="img-responsive gallery">
-            <h3>Cinnamon</h3>
-          </div>
+      <!-- Cupcakes Row 2-->
+      <div class="row">
+        <div ng-repeat="product in cupcakesR2" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Layer Cakes -->
-      <section id="layerc" class="container-fluid well text-center">
-        <h2>Layer Cakes</h2>
+    <!-- Layer Cakes -->
+    <section id="layerc" class="container-fluid well text-center">
+      <h2>Layer Cakes</h2>
 
-        <!-- Layer Cake Row 1 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerChocolateCakewChocIcing.jpg" alt="Chocolate Cake w/ Chocolate Icing" class="img-responsive gallery">
-            <h3>Chocolate w/ Choc Icing</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerClassicChocolatewVanillaIcing.jpg" alt="Classic Chocolate Cake w/ Vanilla Icing" class="img-responsive gallery">
-            <h3>Chocolate w/ Vanilla Icing</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerButtercupwChocIcing.jpg" alt="Buttercup Cake with Chocolate Icing" class="img-responsive gallery">
-            <h3>Buttercup w/ Choc Icing</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerButtercupwVanillaIcing.jpg" alt="Buttercup Cake with Vanilla Icing" class="img-responsive gallery">
-            <h3>Buttercup w/ Vanilla Icing</h3>
-          </div>
+      <!-- Layer Cake Row 1 -->
+      <div class="row">
+        <div ng-repeat="product in layerCakesR1" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Layer Cake Row 2 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerLemon.jpg" alt="Lemon Cake" class="img-responsive gallery">
-            <h3>Lemon</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerMochaccino.jpg" alt="Mochaccino Cake" class="img-responsive gallery">
-            <h3>Mochaccino</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerPeanutButternJelly.jpg" alt="Peanut Butter & Jelly Cake" class="img-responsive gallery">
-            <h3>Peanut Butter & Jelly</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerGermanChocolate.jpg" alt="German Chocolate Cake" class="img-responsive gallery">
-            <h3>German Chocolate</h3>
-          </div>
+      <!-- Layer Cake Row 2 -->
+      <div class="row">
+        <div ng-repeat="product in layerCakesR2" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Layer Cake Row 3 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerRedVelvet.jpg" alt="Red Velvet Cake" class="img-responsive gallery">
-            <h3>Red Velvet</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerCarrot.jpg" alt="Carrot Cake" class="img-responsive gallery">
-            <h3>Carrot</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerCoconutCake.jpg" alt="Coconut Cake" class="img-responsive gallery">
-            <h3>Coconut</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/layerHummingbird.jpg" alt="Hummingbird Cake" class="img-responsive gallery">
-            <h3>Hummingbird</h3>
-          </div>
+      <!-- Layer Cake Row 3 -->
+      <div class="row">
+        <div ng-repeat="product in layerCakesR3" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Cheesecakes -->
-      <section id="cheesecake" class="container-fluid well text-center">
-        <h2>Cheesecakes</h2>
+    <!-- Cheesecakes -->
+    <section id="cheesecake" class="container-fluid well text-center">
+      <h2>Cheesecakes</h2>
 
-        <!-- Cheesecakes Row 1 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeChocolateMarble.jpg" alt="Chocolate Marble Cheesecake" class="img-responsive gallery">
-            <h3>Chocolate Marble</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeRaspberrySwirled.jpg" alt="Raspberry Swirled Cheesecake" class="img-responsive gallery">
-            <h3>Raspberry Swirled</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeREESESMarble.jpg" alt="Reese's Marble Cheesecake" class="img-responsive gallery">
-            <h3>Reese's Marble</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeTripleLayer.jpg" alt="Triple Layer Cheesecake" class="img-responsive gallery">
-            <h3>Triple Layer</h3>
-          </div>
+      <!-- Cheesecakes Row 1 -->
+      <div class="row">
+        <div ng-repeat="product in cheeseCakesR1" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
+      </div>
 
-        <!-- Cheesecakes Row 2 -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeCaramel.jpg" alt="Caramel Cheesecake" class="img-responsive gallery">
-            <h3>Caramel</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeRaspberry.jpg" alt="Raspberry Cheesecake" class="img-responsive gallery">
-            <h3>Raspberry</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeCandyCaneSwirl.jpg" alt="Candy Cane Swirl Cheesecake" class="img-responsive gallery">
-            <h3>Candy Cane Swirl</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/cheesecakeStrawberryChocolateChip.jpg" alt="Strawberry Chocolate Chip Cheesecake" class="img-responsive gallery">
-            <h3>Strawberry Chocolate Chip</h3>
-          </div>
+      <!-- Cheesecakes Row 2 -->
+      <div class="row">
+        <div ng-repeat="product in cheeseCakesR2" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Bundt Cakes -->
-      <section id="bundt" class="container-fluid well text-center">
-        <h2>Bundt Cakes</h2>
+    <!-- Bundt Cakes -->
+    <section id="bundt" class="container-fluid well text-center">
+      <h2>Bundt Cakes</h2>
 
-        <!-- Bundt Cakes Row  -->
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/bundtChocolate.jpg" alt="Chocolate Bundt Cake" class="img-responsive gallery">
-            <h3>Chocolate</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/bundtBlueberryCoffee.jpg" alt="Blueberry Coffee Bundt Cake" class="img-responsive gallery">
-            <h3>Blueberry</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/bundtLemonVanilla.jpg" alt="Lemon Vanilla Bundt Cake" class="img-responsive gallery">
-            <h3>Lemon Vanilla</h3>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <img src="img/bundtAngelFoodCake.jpg" alt="Cinnamon Cupcake" class="img-responsive gallery">
-            <h3>Angel Food Cake</h3>
-          </div>
+      <!-- Bundt Cakes Row  -->
+      <div class="row">
+        <div ng-repeat="product in bundtCakesR1" class="col-sm-3 col-xs-6">
+          <img ng-src="{{product.photo}}" alt="{{product.name}}" class="img-responsive gallery">
+          <h3>{{product.name}}</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 </div>
 
 <!-- Footer -->
@@ -286,6 +167,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="js/panettiere.js"></script>
+<!-- AngularJS App -->
+<script src="js/app.js"></script>
 
 </body>
 
