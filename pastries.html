@@ -52,114 +52,20 @@
 </header>
 
 <!-- Content -->
-<div class="container-fluid mainContent">
+<div ng-controller="productController as product" class="container-fluid mainContent">
   <!-- Menu -->
   <nav id="myScrollspy">
     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-      <li><a href="#puff">Cream Puff</a></li>
-      <li><a href="#eclair">Éclair</a></li>
-      <li><a href="#cannoli">Cannoli</a></li>
-      <li><a href="#strudel">Strudel</a></li>
-      <li><a href="#muffin">Muffin</a></li>
-      <li><a href="#otherspastries">Others</a></li>
+      <li ng-repeat="product in pastries">
+        <a href="#{{product.id}}">{{product.type}}</a>
+      </li>
     </ul>
   </nav>
 
-  <main ng-controller="productController as product">
-
-    <!-- Cream Puff -->
-    <section id="puff" class="container-fluid well text-center">
-      <h2>Cream Puff</h2>
-
-      <!-- Cream Puff Row 1 -->
-      <div class="row">
-        <div ng-repeat="product in creamPuffR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Cream Puff Row 2 -->
-      <div class="row">
-        <div ng-repeat="product in creamPuffR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Cream Puff Row 3 -->
-      <div class="row">
-        <div ng-repeat="product in creamPuffR3" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
+  <main>
+    <section ng-repeat="product in pastries">
+      <div product-gallery></div>
     </section>
-
-    <!-- Éclair -->
-    <section id="eclair" class="container-fluid well text-center">
-      <h2>Éclair</h2>
-
-      <!-- Éclair Row -->
-      <div class="row">
-        <div ng-repeat="product in eclair" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cannoli -->
-    <section id="cannoli" class="container-fluid well text-center">
-      <h2>Cannoli</h2>
-
-      <!-- Cannoli Row -->
-      <div class="row">
-        <div ng-repeat="product in cannoli" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Strudel -->
-    <section id="strudel" class="container-fluid well text-center">
-      <h2>Strudel</h2>
-
-      <!-- Strudel Row -->
-      <div class="row">
-        <div ng-repeat="product in strudel" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Muffin -->
-    <section id="muffin" class="container-fluid well text-center">
-      <h2>Muffin</h2>
-
-      <!-- Muffin Row 1 -->
-      <div class="row">
-        <div ng-repeat="product in muffinR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Muffin Row 2 -->
-      <div class="row">
-        <div ng-repeat="product in muffinR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Others -->
-    <section id="otherspastries" class="container-fluid well text-center">
-      <h2>Others</h2>
-
-      <!-- Others Row -->
-      <div class="row">
-        <div ng-repeat="product in others" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
   </main>
 </div>
 
