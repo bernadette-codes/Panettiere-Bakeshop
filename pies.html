@@ -52,62 +52,20 @@
 </header>
 
 <!-- Content -->
-<div class="container-fluid mainContent">
+<div ng-controller="productController as product" class="container-fluid mainContent">
   <!-- Menu -->
   <nav id="myScrollspy">
     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-      <li><a href="#chocpie">Chocolate Pies</a></li>
-      <li><a href="#fruit">Fruit Pies</a></li>
+      <li ng-repeat="product in pies">
+        <a href="#{{product.id}}">{{product.type}}</a>
+      </li>
     </ul>
   </nav>
 
-  <main ng-controller="productController as product">
-
-    <!-- Chocolate Pies -->
-    <section  id="chocpie" class="container-fluid well text-center">
-      <h2>Chocolate Pies</h2>
-
-      <!-- Chocolate Pies 1 -->
-      <div class="row">
-        <div ng-repeat="product in chocPiesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Chocolate Pies 2 -->
-      <div class="row">
-        <div ng-repeat="product in chocPiesR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Chocolate Pies 3 -->
-      <div class="row">
-        <div ng-repeat="product in chocPiesR3" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
+  <main>
+    <section ng-repeat="product in pies">
+      <div product-gallery></div>
     </section>
-
-    <!-- Fruit Pies -->
-    <section id="fruit" class="container-fluid well text-center">
-      <h2>Fruit Pies</h2>
-
-      <!-- Fruit Pies 1 -->
-      <div class="row">
-        <div ng-repeat="product in fruitPiesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Fruit Pies 2 -->
-      <div class="row">
-        <div ng-repeat="product in fruitPiesR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
   </main>
 </div>
 
