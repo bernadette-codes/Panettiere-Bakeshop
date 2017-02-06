@@ -52,95 +52,20 @@
 </header>
 
 <!-- Content -->
-<div class="container-fluid mainContent">
+<div ng-controller="productController as product" class="container-fluid mainContent">
   <!-- Menu -->
   <nav id="myScrollspy">
     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-      <li><a href="#cupcake">Cupcakes</a></li>
-      <li><a href="#layerc">Layer Cakes</a></li>
-      <li><a href="#cheesecake">Cheesecakes</a></li>
-      <li><a href="#bundt">Bundt Cakes</a></li>
+      <li ng-repeat="product in cakes">
+        <a href="#{{product.id}}">{{product.type}}</a>
+      </li>
     </ul>
   </nav>
 
-  <main ng-controller="productController as product">
-
-    <!-- Cupcakes -->
-    <section  id="cupcake" class="container-fluid well text-center">
-      <h2>Cupcakes</h2>
-
-      <!-- Cupcakes Row 1-->
-      <div class="row">
-        <div ng-repeat="product in cupcakesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Cupcakes Row 2-->
-      <div class="row">
-        <div ng-repeat="product in cupcakesR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
+  <main>
+    <section ng-repeat="product in cakes">
+      <div product-gallery></div>
     </section>
-
-    <!-- Layer Cakes -->
-    <section id="layerc" class="container-fluid well text-center">
-      <h2>Layer Cakes</h2>
-
-      <!-- Layer Cake Row 1 -->
-      <div class="row">
-        <div ng-repeat="product in layerCakesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Layer Cake Row 2 -->
-      <div class="row">
-        <div ng-repeat="product in layerCakesR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Layer Cake Row 3 -->
-      <div class="row">
-        <div ng-repeat="product in layerCakesR3" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cheesecakes -->
-    <section id="cheesecake" class="container-fluid well text-center">
-      <h2>Cheesecakes</h2>
-
-      <!-- Cheesecakes Row 1 -->
-      <div class="row">
-        <div ng-repeat="product in cheeseCakesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Cheesecakes Row 2 -->
-      <div class="row">
-        <div ng-repeat="product in cheeseCakesR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bundt Cakes -->
-    <section id="bundt" class="container-fluid well text-center">
-      <h2>Bundt Cakes</h2>
-
-      <!-- Bundt Cakes Row  -->
-      <div class="row">
-        <div ng-repeat="product in bundtCakesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
   </main>
 </div>
 
