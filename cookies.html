@@ -52,48 +52,20 @@
 </header>
 
 <!-- Content -->
-<div class="container-fluid mainContent">
+<div ng-controller="productController as product" class="container-fluid mainContent">
   <!-- Menu -->
   <nav id="myScrollspy">
     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-      <li><a href="#cookies">Dropped Cookies</a></li>
-      <li><a href="#pizzelle">Pizzelle</a></li>
+      <li ng-repeat="product in cookies">
+        <a href="#{{product.id}}">{{product.type}}</a>
+      </li>
     </ul>
   </nav>
 
-  <main ng-controller="productController as product">
-
-    <!-- Dropped Cookies -->
-    <section  id="cookies" class="container-fluid well text-center">
-      <h2>Dropped Cookies</h2>
-
-      <!-- Dropped Cookies Row 1 -->
-      <div class="row">
-        <div ng-repeat="product in cookiesR1" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-
-      <!-- Dropped Cookies Row 2 -->
-      <div class="row">
-        <div ng-repeat="product in cookiesR2" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
+  <main>
+    <section ng-repeat="product in cookies">
+      <div product-gallery></div>
     </section>
-
-    <!-- Pizzelle -->
-    <section id="pizzelle" class="container-fluid well text-center">
-      <h2>Pizzelle</h2>
-
-      <!-- Pizzelle Row-->
-      <div class="row">
-        <div ng-repeat="product in pizzelle" class="col-sm-3 col-xs-6">
-          <div product-gallery></div>
-        </div>
-      </div>
-    </section>
-
   </main>
 </div>
 
