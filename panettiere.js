@@ -7,7 +7,7 @@ $(document).ready(function(){
     var windowWidth = $(window).width(),
         windowHeight = $(window).height(),
         affixHeight = $(".nav-pills.nav-stacked").height(),
-        $gallery = $(".mainContent main");
+        $gallery = $(".mainContent").find("main");
 
     //alert(windowHeight);
 
