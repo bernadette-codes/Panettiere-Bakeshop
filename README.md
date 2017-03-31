@@ -1,28 +1,21 @@
-Panettiere Bakeshop
 
-Description: This website was built using HTML, CSS and Bootstrap.
+**Panettiere**
+--------------------
 
-Link: http://www.bernadetteengleman.com/Websites/Panettiere%20Bakeshop/index.html
+[Panettiere](http://www.bernadetteengleman.com/Websites/Panettiere%20Bakeshop/index.html)   is a responsive 5-webpage bakeshop website built as personal project.
 
-Outline:
-Page 1 - Landing Page
-Page 2 - Cakes
-     h3: Cupcakes
-     h3:  Bundt Cakes
-     h3:  Cheesecakes
-     h3:  Layer Cakes
-Page 3 - Cookies
-     h3:  Dropped Cookies
-     h3:  Pizzelle
-Page 4 - Pies
-     h3:  Chocolate Pies
-     h3:  Fruit Pies
-Page 5 - Pastries
-     h3:  Cream Puff
-     h3:  Éclair
-     h3:  Cannoli
-     h3:  Strudel
-     h3:  Muffin
-     h3:  Others
+![Panettiere Webpage](http://www.bernadetteengleman.com/img/portfolio/panattierethumbnail2.jpg)
 
+![Panettiere Webpage](http://www.bernadetteengleman.com/img/portfolio/panattierethumbnail.jpg)
 
+ - Utilizes AngularJS $http Service to provide data from JSON API for all products
+ - Uses AngularJS Custom Directives to populate products for 4-webpages
+ - Features Bootstrap Scrollspy and Affix
+
+**Front-End:**
+
+ - AngularJS
+ - JavaScript
+ - Bootstrap
+ - CSS
+ - HTML5
