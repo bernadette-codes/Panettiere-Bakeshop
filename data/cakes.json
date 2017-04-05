@@ -1,0 +1,129 @@
+[{
+  "type": "Cupcakes",
+  "id": "cupcake",
+  "lists": [{
+    "row": [{
+      "name": "Chocolate w/ Chocolate Icing",
+      "photo": "../img/cupcakeChocolateChocIcing.jpg"
+    }, {
+      "name": "Buttercup w/ Chocolate Icing",
+      "photo": "../img/cupcakeButtercupChocFrosting.jpg"
+    }, {
+      "name": "Chocolate w/ Vanilla Icing",
+      "photo": "../img/cupcakeChocolateVanilla%20Frosting.jpg"
+    }, {
+      "name": "Buttercup w/ Vanilla Icing",
+      "photo": "../img/cupcakeButtercupVanilla%20Frosting.jpg"
+    }]
+  }, {
+    "row": [{
+      "name": "Devil Dog",
+      "photo": "../img/cupcakeDevil%20Dog.jpg"
+    }, {
+      "name": "Red Velvet",
+      "photo": "../img/cupcakeRedVelvet.jpg"
+    }, {
+      "name": "Lemon",
+      "photo": "../img/cupcakeLemon%20Cupcake.jpg"
+    }, {
+      "name": "Cinnamon",
+      "photo": "../img/cupcakeCinnamon.jpg"
+    }]
+  }]
+}, {
+  "type": "Layer Cakes",
+  "id": "layerc",
+  "lists": [{
+    "row": [{
+      "name": "Chocolate w/ Choc Icing",
+      "photo": "../img/layerChocolateCakewChocIcing.jpg"
+    }, {
+      "name": "Chocolate w/ Vanilla Icing",
+      "photo": "../img/layerClassicChocolatewVanillaIcing.jpg"
+    }, {
+      "name": "Buttercup w/ Choc Icing",
+      "photo": "../img/layerButtercupwChocIcing.jpg"
+    }, {
+      "name": "Buttercup w/ Vanilla Icing",
+      "photo": "../img/layerButtercupwVanillaIcing.jpg"
+    }]
+  }, {
+    "row": [{
+      "name": "Lemon",
+      "photo": "../img/layerLemon.jpg"
+    }, {
+      "name": "Mochaccino",
+      "photo": "../img/layerMochaccino.jpg"
+    }, {
+      "name": "Peanut Butter & Jelly",
+      "photo": "../img/layerPeanutButternJelly.jpg"
+    }, {
+      "name": "German Chocolate",
+      "photo": "../img/layerGermanChocolate.jpg"
+    }]
+  }, {
+    "row": [{
+      "name": "Red Velvet",
+      "photo": "../img/layerRedVelvet.jpg"
+    }, {
+      "name": "Carrot",
+      "photo": "../img/layerCarrot.jpg"
+    }, {
+      "name": "Coconut",
+      "photo": "../img/layerCoconutCake.jpg"
+    }, {
+      "name": "Hummingbird",
+      "photo": "../img/layerHummingbird.jpg"
+    }]
+  }]
+}, {
+  "type": "Cheesecakes",
+  "id": "cheesecake",
+  "lists": [{
+    "row": [{
+      "name": "Chocolate Marble",
+      "photo": "../img/cheesecakeChocolateMarble.jpg"
+    }, {
+      "name": "Raspberry Swirled",
+      "photo": "../img/cheesecakeRaspberrySwirled.jpg"
+    }, {
+      "name": "Reese's Marble",
+      "photo": "../img/cheesecakeREESESMarble.jpg"
+    }, {
+      "name": "Triple Layer",
+      "photo": "../img/cheesecakeTripleLayer.jpg"
+    }]
+  }, {
+    "row": [{
+      "name": "Caramel",
+      "photo": "../img/cheesecakeCaramel.jpg"
+    }, {
+      "name": "Raspberry",
+      "photo": "../img/cheesecakeRaspberry.jpg"
+    }, {
+      "name": "Candy Cane Swirl",
+      "photo": "../img/cheesecakeCandyCaneSwirl.jpg"
+    }, {
+      "name": "Strawberry Chocolate Chip",
+      "photo": "../img/cheesecakeStrawberryChocolateChip.jpg"
+    }]
+  }]
+}, {
+  "type": "Bundt Cakes",
+  "id": "bundt",
+  "lists": [{
+    "row": [{
+      "name": "Chocolate",
+      "photo": "../img/bundtChocolate.jpg"
+    }, {
+      "name": "Blueberry",
+      "photo": "../img/bundtBlueberryCoffee.jpg"
+    }, {
+      "name": "Lemon Vanilla",
+      "photo": "../img/bundtLemonVanilla.jpg"
+    }, {
+      "name": "Angel Food Cake",
+      "photo": "../img/bundtAngelFoodCake.jpg"
+    }]
+  }]
+}]
