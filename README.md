@@ -2,7 +2,7 @@
 **Panettiere**
 --------------------
 
-[Panettiere](http://www.bernadetteengleman.com/Websites/Panettiere%20Bakeshop/index.html)   is a responsive 5-webpage bakeshop website built as personal project.
+[Panettiere](http://www.bernadetteengleman.com/Websites/Panettiere-Bakeshop/index.html)   is a responsive 5-webpage bakeshop website built as personal project.
 
 ![Panettiere Webpage](http://www.bernadetteengleman.com/img/portfolio/panattierethumbnail2.jpg)
 
