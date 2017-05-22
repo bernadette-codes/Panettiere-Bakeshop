@@ -1,8 +1,8 @@
 
-**Panettiere**
+**Panettiere Bakeshop**
 --------------------
 
-[Panettiere](http://www.bernadetteengleman.com/Websites/Panettiere-Bakeshop/index.html) is a responsive bakeshop website built as personal project.
+[Panettiere Bakeshop](http://www.bernadetteengleman.com/Websites/Panettiere-Bakeshop/index.html) is a responsive website built as personal project.
 
 ![Panettiere Webpage](http://www.bernadetteengleman.com/img/portfolio/panattierethumbnail2.jpg)
 
