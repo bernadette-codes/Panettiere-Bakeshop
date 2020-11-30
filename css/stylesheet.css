@@ -1,14 +1,17 @@
 @charset "utf-8";
-/* CSS Document */
 
 *, body {
     padding: 0;
     margin: 0;
 }
-
+html {
+    position: relative; 
+    min-height: 100%
+}
 body {
     display: block;
     background: url(../img/background.jpg) center center / cover no-repeat fixed;
+    padding: 0 0 150px;
 }
 
 /* Header */
@@ -27,7 +30,6 @@ h1 {
     text-indent: -3000px;
 }
 
-/* Menu */
 nav.navbar.navbar-default {
     background: #fff5e5;
     border-top-style: hidden;
@@ -36,16 +38,20 @@ nav.navbar.navbar-default {
 }
 
 nav.navbar ul.navbar-nav {
-    float: none;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
     margin: 0 auto;
 }
 
 ul.navbar-nav li {
     width: 20%;
     margin-top: 10px;
-    text-align: center;
     padding-top: 10px;
+    text-align: center;
+    list-style: none;;
 }
 
 ul.nav.navbar-nav a.menu {
@@ -55,6 +61,8 @@ ul.nav.navbar-nav a.menu {
     font-size: 22px;
     padding: 10px;
     margin: 10px 20% 0;
+    text-decoration: none;
+    transition: all ease;
 }
 
 ul.nav.navbar-nav a.menu:hover {
@@ -72,44 +80,32 @@ ul.nav.navbar-nav a.menu:before {
     right: -5px;
 }
 
-/* Brand Image */
 .brand {
     position: relative;
+    margin-top: -10px;
+    margin-bottom: 10px;
     z-index: 100;
-    margin-top: -25px;
-    margin-bottom: -5px;
 }
 
 .smallBrand {
     display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background: #fff5e5;
+    padding: 10px 20px 20px;
+    text-align: center;
     z-index: 8991;
 }
 
-/* Toggle Button */
-button.navbar-toggle {
-    background-color: #663300;
-    color: #ffffff;
-    font-family: Georgia, Times, serif;
-    font-size: 16px;
-    padding: 3px 7px;
+.smallBrand img {
+    display: inline-block;
+    height: 65px;
+    width: auto;
 }
 
-button.navbar-toggle.collapsed:hover,
-button.navbar-toggle.collapsed:focus,
-button.navbar-toggle.collapsed:visited {
-    background-color: #fff5e5;
-    color: #663300;
-    border: 2px solid #663300;
-}
-
-/* Front Page Slideshow */
 #myCarousel {
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
+    margin: 50px auto;
 }
 
 .carousel-inner > .item > img,
@@ -138,6 +134,7 @@ section .well {
     box-shadow: 0 0 8px 2px #e5dcce;
     border-radius: 10px;
     margin-top: 30px;
+    text-align: center;
 }
 
 main h2 {
@@ -164,12 +161,16 @@ img.gallery {
     margin-top: 20px;
 }
 
-/* Footer */
 footer {
-    position: relative;
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 120px; 
+    width: 100%;
     background: #e5dcce;
     padding-top: 1em;
     margin-top: 25px;
+    text-align: center;
     box-shadow: 0 -4px 3px #e5dcce;
 }
 
@@ -240,33 +241,20 @@ ul.nav-pills.nav-stacked li.active > a,
     color: #583225;
 }
 
-/***** Media Queries *****/
 @media screen and (max-width: 1299px) {
-    /* Brand Image */
     .brand {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1199px) {
-    /* Front Page Slideshow */
-    #myCarousel {
-        width: 85%;
-    }
-}
-
 @media screen and (max-width: 991px) {
-    /* Brand Image */
     .brand {
         height: 55px;
     }
-    /* Main Menu */
     ul.nav.navbar-nav a.menu {
         font-size: 18px;
-        margin: 3% 23% 0;
         padding: 5px;
     }
-    /* Front Page Slideshow */
     #myCarousel {
         width: 90%;
     }
@@ -307,43 +295,31 @@ ul.nav-pills.nav-stacked li.active > a,
 }
 
 @media screen and (max-width: 767px) {
-    /* Brand Image */
+    .navbar-nav .logo {
+        display: none;
+    }
     .smallBrand {
         display: block;
-        height: 50px;
     }
-    /* Main Menu */
+    .navbar {
+        z-index: -10;
+    }
+
+    ul.navbar-nav li {
+        width: 25%;
+    }
+    ul.nav.navbar-nav a.menu {
+        margin: 10px;
+    }
     nav.navbar.navbar-default {
         padding-bottom: 10px;
     }
-    #navbarbtn.navbar-collapse {
-        border-top-style: hidden;
-    }
-    nav.navbar ul.navbar-nav li {
-        float: left;
-        margin: 5px 10px;
-    }
-    ul.nav.navbar-nav a.menu {
-        padding: 5px;
-        margin: 5px 5% 0;
-    }
-    /* Front Page Slideshow */
     #myCarousel {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    /* Main Menu */
-    nav.navbar ul.navbar-nav li {
-        margin: 5px 5px;
-    }
-    ul.nav.navbar-nav a.menu {
-        font-size: 17px;
-        padding: 5px;
-        margin: 5px 3% 0;
-    }
-    /* Side Bar Menu */
     ul.nav-pills.nav-stacked a,
     h3 {
         font-size: 16px;
@@ -351,9 +327,17 @@ ul.nav-pills.nav-stacked li.active > a,
 }
 
 @media screen and (max-width: 450px) {
-    /* Main Menu */
     ul.nav.navbar-nav a.menu {
         font-size: 15px;
+    }
+    ul.nav.navbar-nav a.menu:before {
+        border: 2px solid #583225;
+        content: "";
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -3px;
+        right: -3px;
     }
     /* Side Bar Menu */
     ul.nav-pills.nav-stacked a,
@@ -363,10 +347,10 @@ ul.nav-pills.nav-stacked li.active > a,
 }
 
 @media screen and (max-width: 400px) {
-    /* Main Menu */
     ul.nav.navbar-nav a.menu {
-        font-size: 13px;
-    }
+        padding: 3px;
+        margin: 5px;
+    } 
     /* Side Bar Menu */
     ul.nav-pills.nav-stacked a {
         font-size: 12px;
@@ -383,10 +367,6 @@ ul.nav-pills.nav-stacked li.active > a,
 }
 
 @media screen and (max-width: 350px) {
-    /* Main Menu */
-    ul.nav.navbar-nav a.menu {
-        font-size: 11px;
-    }
     h3 {
         font-size: 12px;
     }

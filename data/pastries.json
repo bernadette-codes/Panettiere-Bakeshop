@@ -1,151 +1,192 @@
-[{
-  "type": "Cream Puff",
-  "id": "puff",
-  "lists": [{
-    "row": [{
-      "name": "Cocoa",
-      "photo": "../img/creampuff-cocoa.jpg"
-    }, {
-      "name": "Peach",
-      "photo": "../img/creampuffpeachesncream.jpg"
-    }, {
-      "name": "Milk Chocolate",
-      "photo": "../img/creampuffmilkchoc.jpg"
-    }, {
-      "name": "Coffee Jelly",
-      "photo": "../img/creampuffcoffeejelly.jpg"
-    }]
-  }, {
-    "row": [{
-      "name": "Strawberry",
-      "photo": "../img/creampuffstrawberry.jpg"
-    }, {
-      "name": "Mango",
-      "photo": "../img/creampuffmango.jpg"
-    }, {
-      "name": "Berry",
-      "photo": "../img/creampuffberry.jpg"
-    }, {
-      "name": "Grapefruit",
-      "photo": "../img/creampuffgrapefruit.jpg"
-    }]
-  }, {
-    "row": [{
-      "name": "Cookie Crunch",
-      "photo": "../img/creampuffcookiecrunch.jpg"
-    }, {
-      "name": "Apple Cinnamon",
-      "photo": "../img/creampuffapplecinnamon.jpg"
-    }, {
-      "name": "Chocolate Banana",
-      "photo": "../img/creampuffchocbanana.jpg"
-    }, {
-      "name": "Dulce de Leche",
-      "photo": "../img/creampuffdulcedeleche.jpg"
-    }]
-  }]
-}, {
-  "type": "Éclair",
-  "id": "eclair",
-  "lists": [{
-    "row": [{
-      "name": "Chocolate",
-      "photo": "../img/eclair-chocolate.jpg"
-    }, {
-      "name": "Raspberry",
-      "photo": "../img/eclair-raspberry.jpg"
-    }, {
-      "name": "Chocolate Caramel",
-      "photo": "../img/eclair-choccaramel.jpg"
-    }, {
-      "name": "Chocolate Praline",
-      "photo": "../img/eclair-chocpraline.jpg"
-    }]
-  }]
-}, {
-  "type": "Cannoli",
-  "id": "cannoli",
-  "lists": [{
-    "row": [{
-      "name": "Ricotta Cheese",
-      "photo": "../img/cannoliPlain.jpg"
-    }, {
-      "name": "Chocolate Mousse",
-      "photo": "../img/cannoliEspresso.jpg"
-    }, {
-      "name": "Chocolate-Dipped",
-      "photo": "../img/cannoliChocolateDipped.jpg"
-    }, {
-      "name": "Florentine",
-      "photo": "../img/cannoliFlorentine.jpg"
-    }]
-  }]
-}, {
-  "type": "Strudel",
-  "id": "strudel",
-  "lists": [{
-    "row": [{
-      "name": "Cheese",
-      "photo": "../img/strudelcheese.jpg"
-    }, {
-      "name": "Apple",
-      "photo": "../img/strudelapplewalnut.jpg"
-    }, {
-      "name": "Blueberry",
-      "photo": "../img/strudelblueberrycheese.jpg"
-    }, {
-      "name": "Apricot",
-      "photo": "../img/strudelapricot.jpg"
-    }]
-  }]
-}, {
-  "type": "Muffin",
-  "id": "muffin",
-  "lists": [{
-    "row": [{
-      "name": "Apple Cinnamon",
-      "photo": "../img/muffinapplecinnamon.jpg"
-    }, {
-      "name": "Banana Nut",
-      "photo": "../img/muffinbanana.jpg"
-    }, {
-      "name": "Blueberry",
-      "photo": "../img/muffinblueberry.jpg"
-    }, {
-      "name": "Oatmeal Muffin",
-      "photo": "../img/muffinoatmeal.jpg"
-    }]
-  }, {
-    "row": [{
-      "name": "Corn Muffin",
-      "photo": "../img/muffincorn.jpg"
-    }, {
-      "name": "Cinnamon Crumb",
-      "photo": "../img/muffincinnamoncrumb.jpg"
-    }, {
-      "name": "Apple Cinnamon",
-      "photo": "../img/muffinapplecinnamon.jpg"
-    }, {
-      "name": "Lemon Poppy Seed",
-      "photo": "../img/muffinlemonpoppy.jpg"
-    }]
-  }]
-}, {
-  "type": "Others",
-  "id": "otherspastries",
-  "lists": [{
-    "row": [{
-      "name": "Napoleon",
-      "photo": "../img/napoleon.jpg"
-    }, {
-      "name": "Cronut",
-      "photo": "../img/cronut.jpg"
-    }, {
-      "name": "Lobster Tail",
-      "photo": "../img/lobstertail.jpg"
-    }, {
-      "name": "Cinnamon Roll",
-      "photo": "../img/cinnamon-rolls.jpg"
-    }]
-  }]
-}]
+[
+  {
+    "type": "Cream Puff",
+    "id": "puff",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Cocoa",
+            "photo": "../img/creampuff-cocoa.jpg"
+          },
+          {
+            "name": "Peach",
+            "photo": "../img/creampuffpeachesncream.jpg"
+          },
+          {
+            "name": "Milk Chocolate",
+            "photo": "../img/creampuffmilkchoc.jpg"
+          },
+          {
+            "name": "Coffee Jelly",
+            "photo": "../img/creampuffcoffeejelly.jpg"
+          }
+        ]
+      },
+      {
+        "row": [
+          {
+            "name": "Strawberry",
+            "photo": "../img/creampuffstrawberry.jpg"
+          },
+          {
+            "name": "Mango",
+            "photo": "../img/creampuffmango.jpg"
+          },
+          {
+            "name": "Berry",
+            "photo": "../img/creampuffberry.jpg"
+          },
+          {
+            "name": "Grapefruit",
+            "photo": "../img/creampuffgrapefruit.jpg"
+          }
+        ]
+      },
+      {
+        "row": [
+          {
+            "name": "Cookie Crunch",
+            "photo": "../img/creampuffcookiecrunch.jpg"
+          },
+          {
+            "name": "Apple Cinnamon",
+            "photo": "../img/creampuffapplecinnamon.jpg"
+          },
+          {
+            "name": "Chocolate Banana",
+            "photo": "../img/creampuffchocbanana.jpg"
+          },
+          {
+            "name": "Dulce de Leche",
+            "photo": "../img/creampuffdulcedeleche.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Éclair",
+    "id": "eclair",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Chocolate",
+            "photo": "../img/eclair-chocolate.jpg"
+          },
+          {
+            "name": "Raspberry",
+            "photo": "../img/eclair-raspberry.jpg"
+          },
+          {
+            "name": "Chocolate Caramel",
+            "photo": "../img/eclair-choccaramel.jpg"
+          },
+          {
+            "name": "Chocolate Praline",
+            "photo": "../img/eclair-chocpraline.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Cannoli",
+    "id": "cannoli",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Ricotta Cheese",
+            "photo": "../img/cannoliPlain.jpg"
+          },
+          {
+            "name": "Chocolate Mousse",
+            "photo": "../img/cannoliEspresso.jpg"
+          },
+          {
+            "name": "Chocolate-Dipped",
+            "photo": "../img/cannoliChocolateDipped.jpg"
+          },
+          {
+            "name": "Florentine",
+            "photo": "../img/cannoliFlorentine.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Muffin",
+    "id": "muffin",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Apple Cinnamon",
+            "photo": "../img/muffinapplecinnamon.jpg"
+          },
+          {
+            "name": "Banana Nut",
+            "photo": "../img/muffinbanana.jpg"
+          },
+          {
+            "name": "Blueberry",
+            "photo": "../img/muffinblueberry.jpg"
+          },
+          {
+            "name": "Oatmeal Muffin",
+            "photo": "../img/muffinoatmeal.jpg"
+          }
+        ]
+      },
+      {
+        "row": [
+          {
+            "name": "Corn Muffin",
+            "photo": "../img/muffincorn.jpg"
+          },
+          {
+            "name": "Cinnamon Crumb",
+            "photo": "../img/muffincinnamoncrumb.jpg"
+          },
+          {
+            "name": "Apple Cinnamon",
+            "photo": "../img/muffinapplecinnamon.jpg"
+          },
+          {
+            "name": "Lemon Poppy Seed",
+            "photo": "../img/muffinlemonpoppy.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Others",
+    "id": "otherspastries",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Napoleon",
+            "photo": "../img/napoleon.jpg"
+          },
+          {
+            "name": "Cronut",
+            "photo": "../img/cronut.jpg"
+          },
+          {
+            "name": "Lobster Tail",
+            "photo": "../img/lobstertail.jpg"
+          },
+          {
+            "name": "Cinnamon Roll",
+            "photo": "../img/cinnamon-rolls.jpg"
+          }
+        ]
+      }
+    ]
+  }
+]

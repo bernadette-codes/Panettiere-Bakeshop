@@ -1,51 +1,70 @@
-[{
-  "type": "Dropped Cookies",
-  "id": "cookies",
-  "lists": [{
-    "row": [{
-      "name": "Chocolate Chip",
-      "photo": "../img/cookieschocchip.jpg"
-    }, {
-      "name": "Oatmeal Raisin",
-      "photo": "../img/cookiesoatmealraisin.jpg"
-    }, {
-      "name": "Brownie",
-      "photo": "../img/cookiesbrowniecookie.jpg"
-    }, {
-      "name": "Snickerdoodle",
-      "photo": "../img/cookiesnickerdoodle.jpg"
-    }]
-  }, {
-    "row": [{
-      "name": "Toffee Crunch",
-      "photo": "../img/cookiestoffeecrunch.jpg"
-    }, {
-      "name": "Toffee Fudge",
-      "photo": "../img/cookiestoffeefudge.jpg"
-    }, {
-      "name": "Peanut Butter",
-      "photo": "../img/cookiespeanutbutter.jpg"
-    }, {
-      "name": "White Chocolate Macadamia",
-      "photo": "../img/cookieswhitemacademia.jpg"
-    }]
-  }]
-}, {
-  "type": "Pizzelle",
-  "id": "pizzelle",
-  "lists": [{
-    "row": [{
-      "name": "Chocolate Chip",
-      "photo": "../img/pizzellechocolatechip.jpg"
-    }, {
-      "name": "Cookies-n-Cream",
-      "photo": "../img/pizzellecookiesncream.jpg"
-    }, {
-      "name": "Caramel Coconut",
-      "photo": "../img/pizzellecaramelcoconut.jpg"
-    }, {
-      "name": "White Chocolate",
-      "photo": "../img/pizzellechocpretzel.jpg"
-    }]
-  }]
-}]
+[
+  {
+    "type": "Dropped Cookies",
+    "id": "cookies",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Chocolate Chip",
+            "photo": "../img/cookieschocchip.jpg"
+          },
+          {
+            "name": "Oatmeal Raisin",
+            "photo": "../img/cookiesoatmealraisin.jpg"
+          },
+          {
+            "name": "Brownie",
+            "photo": "../img/cookiesbrowniecookie.jpg"
+          },
+          {
+            "name": "Snickerdoodle",
+            "photo": "../img/cookiesnickerdoodle.jpg"
+          }
+        ]
+      },
+      {
+        "row": [
+          {
+            "name": "Toffee Crunch",
+            "photo": "../img/cookiestoffeecrunch.jpg"
+          },
+          {
+            "name": "Toffee Fudge",
+            "photo": "../img/cookiestoffeefudge.jpg"
+          },
+          {
+            "name": "Peanut Butter",
+            "photo": "../img/cookiespeanutbutter.jpg"
+          },
+          {
+            "name": "White Chocolate Macadamia",
+            "photo": "../img/cookieswhitemacademia.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Pizzelle",
+    "id": "pizzelle",
+    "lists": [
+      {
+        "row": [
+          {
+            "name": "Chocolate Chip",
+            "photo": "../img/pizzellechocolatechip.jpg"
+          },
+          {
+            "name": "Caramel Coconut",
+            "photo": "../img/pizzellecaramelcoconut.jpg"
+          },
+          {
+            "name": "White Chocolate",
+            "photo": "../img/pizzellechocpretzel.jpg"
+          }
+        ]
+      }
+    ]
+  }
+]

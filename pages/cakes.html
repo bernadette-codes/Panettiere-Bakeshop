@@ -1,91 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="panettiere">
+<html lang="en" data-ng-app="panettiere">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cakes | Panettiere Bakeshop</title>
-  <meta name="description" content="bakeshop website">
-  <meta name="keywords" content="website project, Bootstrap project, AngularJS project">
+  <meta name="description" content="Panettiere Bakeshopwebsite">
+  <meta name="keywords" content="Panettiere Bakeshop website">
   <meta name="author" content="Bernadette Estacio">
-  <link rel="shortcut icon" href="../../../img/beIcon.png">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
-<!-- Header -->
-<header>
-  <div class="nav-wrap">
-    <h1>Panettiere Bakeshop</h1>
-    <img src="../img/brandimg.jpg" alt="Panettiere Bakeshop" class="smallBrand">
-
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Toggle Button -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbtn">
-            <span>Menu</span>
-          </button>
-        </div>
-
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarbtn">
-          <ul class="nav navbar-nav">
-            <li><a href="cakes.html" class="menu">Cakes</a></li>
-            <li><a href="cookies.html" class="menu">Cookies</a></li>
-            <li class="logo hidden-xs">
-              <a href="../index.html" class="smoothScroll">
-                <img src="../img/brandimg.jpg" alt="Panettiere Bakeshop" width="220" height="80" class="brand">
-              </a>
-            </li>
-            <li><a href="pies.html" class="menu">Pies</a></li>
-            <li><a href="pastries.html" class="menu">Pastries</a></li>
-          </ul>
-        </div>
+  <header>
+    <div class="nav-wrap">
+      <h1>Panettiere Bakeshop</h1>
+      <div class="smallBrand">
+        <a href="index.html" class="smoothScroll">
+          <img src="../img/brandimg.jpg" alt="Panettiere Bakeshop"></a>
       </div>
+
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div id="navbarbtn">
+            <ul class="nav navbar-nav">
+              <li><a href="cakes.html" class="menu">Cakes</a></li>
+              <li><a href="cookies.html" class="menu">Cookies</a></li>
+              <li class="logo">
+                <a href="../index.html" class="smoothScroll">
+                  <img src="../img/brandimg.jpg" alt="Panettiere Bakeshop" width="220" height="80" class="brand">
+                </a>
+              </li>
+              <li><a href="pies.html" class="menu">Pies</a></li>
+              <li><a href="pastries.html" class="menu">Pastries</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div ng-controller="ProductController as product" class="container-fluid mainContent">
+    <!-- Menu -->
+    <nav id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
+        <li ng-repeat="product in cakes">
+          <a href="#{{product.id}}">{{product.type}}</a>
+        </li>
+      </ul>
     </nav>
+
+    <main>
+      <section ng-repeat="product in cakes">
+        <div product-gallery></div>
+      </section>
+    </main>
   </div>
-</header>
 
-<!-- Content -->
-<div ng-controller="ProductController as product" class="container-fluid mainContent">
-  <!-- Menu -->
-  <nav id="myScrollspy">
-    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="110">
-      <li ng-repeat="product in cakes">
-        <a href="#{{product.id}}">{{product.type}}</a>
-      </li>
-    </ul>
-  </nav>
+  <footer class="container-fluid text-center">
+    <p class="storeName">Panettiere Bakeshop</p>
+    <address>22 Jupiter St., Bel Air, Makati</address>
 
-  <main>
-    <section ng-repeat="product in cakes">
-      <div product-gallery></div>
-    </section>
-  </main>
-</div>
+    <p>© <span id="year"></span> Panettiere Bakeshop<br>
+      <span class="small">Designed and created by:
+        <a href="https://bernadetteestacio.site/" target="_blank">Bernadette Estacio</a>&#128279;
+      </span></p>
+  </footer>
 
-<!-- Footer -->
-<footer class="container-fluid text-center">
-  <p class="storeName">Panettiere Bakeshop</p>
-  <address>45 Rockefeller Plaza, New York, NY 10111</address>
-
-  <p><small>Copyright © <span id="year"></span> Panettiere Bakeshop. All rights reserved.<br>
-    <span class="small">Designed and created by:
-      <a href="../../../index.html" target="_blank">Bernadette Estacio</a><small>&#128279;</small>
-    </span>
-  </small></p>
-</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="../js/panettiere.js"></script>
-<!-- AngularJS App -->
-<script src="../js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="../js/panettiere.js"></script>
+  <!-- AngularJS App -->
+  <script src="../js/app.js"></script>
 
 </body>
 
