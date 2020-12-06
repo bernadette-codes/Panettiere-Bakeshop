@@ -23,6 +23,7 @@ header {
 .nav-wrap {
     position: relative;
     margin: 0 auto;
+    background: #fff5e5;
 }
 
 h1 {
@@ -35,6 +36,7 @@ nav.navbar.navbar-default {
     border-top-style: hidden;
     box-shadow: 0 3px 3px #e5dcce;
     border-radius: 0;
+    z-index: 50;
 }
 
 nav.navbar ul.navbar-nav {
@@ -93,8 +95,9 @@ ul.nav.navbar-nav a.menu:before {
     height: 60px;
     background: #fff5e5;
     padding: 10px 20px 20px;
+    margin-bottom: 20px;
     text-align: center;
-    z-index: 8991;
+    z-index: -10;
 }
 
 .smallBrand img {
@@ -300,6 +303,7 @@ ul.nav-pills.nav-stacked li.active > a,
     }
     .smallBrand {
         display: block;
+        margin-bottom: 20px;
     }
     .navbar {
         z-index: -10;
@@ -307,6 +311,8 @@ ul.nav-pills.nav-stacked li.active > a,
 
     ul.navbar-nav li {
         width: 25%;
+        padding-top: 0;
+        margin-top: 0;
     }
     ul.nav.navbar-nav a.menu {
         margin: 10px;
